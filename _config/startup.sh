@@ -1,6 +1,6 @@
 #!/bin/bash
 LOCAL_MODULES="/home/vagrant/.projects/node_modules"
-PROJ_MODULES="/vagrant/src/node_modules"
+PROJ_MODULES="/vagrant/node_modules"
 
 if [ ! -d $LOCAL_MODULES ]; then
   mkdir -p $LOCAL_MODULES
