@@ -30,7 +30,7 @@ system, and _guest_ refers to the Vagrant virtual machine.
 The following ports are forwarded from the host machine to the guest machine:
 
   - `localhost:3000` is forwarded to the Node.js Express.js application 
-  	(when running)
+     (when running)
 
 
 First-time Set-up
@@ -41,36 +41,36 @@ Windows hosts, it may be necessary to use the "Git bash" program, included
 with "Git for Windows".
 
   1.	Clone the project repository on the host machine: 
-  		`https://github.com/thierer1/is603-inventory-dss.git`.
+  	`https://github.com/thierer1/is603-inventory-dss.git`.
 
   2.	Set-up the guest VM using Vagrant: 
-  		`vagrant up`.
+  	`vagrant up`.
 
-  		This may take several minutes to set-up.  The first time, Vagrant will 
-  		attempt to download the base box, and then provision necessary software 
-  		onto the box.  
+	This may take several minutes to set-up.  The first time, Vagrant will 
+	attempt to download the base box, and then provision necessary software 
+	onto the box.  
 
   3.	SSH into the guest VM: 
-  		`vagrant ssh`.
+	`vagrant ssh`.
 
   4.	Navigate to the project directory:
-  		`cd /vagrant`.
+	`cd /vagrant`.
 
-  		The `/vagrant` directory is linked to the project directory on the 
-  		host machine.  This allows you to make code changes on the host 
-  		machine, and they will automatically be made in the guest machine 
-  		as well. 
+	The `/vagrant` directory is linked to the project directory on the 
+	host machine.  This allows you to make code changes on the host 
+	machine, and they will automatically be made in the guest machine 
+	as well. 
 
   5.	Install Node.js dependencies:
-  		`npm install`.
+	`npm install`.
 
   6.	Start the application:
-  		`node bin/www`.
+	`node bin/www`.
 
   7.	Using a browser on the host machine, navigate to:
-  		`http://localhost:3000`.
+	`http://localhost:3000`.
 
-  		You should see the application homepage. 
+	You should see the application homepage. 
 
 
 Development
@@ -88,8 +88,8 @@ On the host machine:
 On the guest machine: 
 
   - `node bin/www` (from the `/vagrant` directory) will start the Node.js 
-  	application.  This must be done every time the code changes.  Use 
-	`ctrl+c` to stop the application while running.
+    application.  This must be done every time the code changes.  Use 
+    `ctrl+c` to stop the application while running.
 
 All code changes should be made on the host machine using an IDE or code 
 editor of choice.
