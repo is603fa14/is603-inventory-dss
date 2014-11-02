@@ -1,0 +1,13 @@
+{
+  "name": "inventory-support-system",
+  "version": "0.0.1",
+  "description": "A decision support system (DSS) used to forecast order quantities",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
