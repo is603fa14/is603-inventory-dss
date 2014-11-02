@@ -1,13 +1,18 @@
 {
-  "name": "inventory-support-system",
+  "name": "inventory-dss",
   "version": "0.0.1",
-  "description": "A decision support system (DSS) used to forecast order quantities",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "MIT"
+  "dependencies": {
+    "express": "~4.9.0",
+    "body-parser": "~1.8.1",
+    "cookie-parser": "~1.3.3",
+    "morgan": "~1.3.0",
+    "serve-favicon": "~2.1.3",
+    "debug": "~2.0.0",
+    "hbs": "~2.7.0",
+    "less-middleware": "1.0.x"
+  }
 }
