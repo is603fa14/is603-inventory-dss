@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>{{title}} | Inventory Support System</title>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    {{{body}}}
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              Inventory Support System
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div id="main-content" class="container-fluid">
+        <h1>{{title}}</h1>
+        {{{body}}}
+      </div>
+      <footer>
+        <p><small>For development only</small></p>
+      </footer>
+    </div>
+    <script type='text/javascript' src='/bootstrap/js/bootstrap.js' />
   </body>
 </html>
