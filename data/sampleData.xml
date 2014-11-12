@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+  <!-- 
+    this is just a dummy file, it does not represent the actual data model;
+    we still need to define that based on the Excel files 
+  -->
+  <product type="candy" name="Reeses">
+    <unitPrice>.49</unitPrice>
+    <retailPrice>1.99</retailPrice>
+  </product>
+</products>
