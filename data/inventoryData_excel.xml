@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<inventory>
+<inventory xmlns="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd">
 	<product>
 		<description>Snckrs 2pc KS 3.29z</description>
 		<minQuantity>15</minQuantity>
