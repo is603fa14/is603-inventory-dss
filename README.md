@@ -123,15 +123,20 @@ made to the existing spreadsheets, then all that is needed is to re-export
 the data from Excel, and transform using XSLT.  
 
   1.  To re-export the data:
-      a.  Open the Excel spreadsheet
-      b.  In the "Developer" tab on the ribbon, click "Export" in the "XML"
-          section.  (If the Developer tab is not visible, follow 
-          [these instructions](http://msdn.microsoft.com/en-us/library/bb608625.aspx)).
-      c.  Save the file in the `data` directory as `inventoryData_excel.xml`.
+    1.  Open the Excel spreadsheet
+    
+    2.  In the "Developer" tab on the ribbon, click "Export" in the "XML"
+        section.  (If the Developer tab is not visible, follow 
+        [these instructions](http://msdn.microsoft.com/en-us/library/bb608625.aspx)).
+
+    3.  Save the file in the `data` directory as `inventoryData_excel.xml`.
   2.  To transform the data:
-      a.  Open a terminal/command prompt, and navigate to the `data` directory.
-      b.  Use Saxon to perform the transformation:
-          `java -jar saxon9he.jar -s:inventoryData_excel.xml -xsl:inventoryData_excel.xsl -o:inventoryData.xml`
+    1.  Open a terminal/command prompt, and navigate to the `data` directory.
+    
+    2.  Use Saxon to perform the transformation:
+    	```
+        java -jar saxon9he.jar -s:inventoryData_excel.xml -xsl:inventoryData_excel.xsl -o:inventoryData.xml
+        ```
 
 This will output the transformed data to `data/inventoryData.xml`.  
 
