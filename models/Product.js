@@ -4,6 +4,8 @@ var WeeklySale = require('./WeeklySale');
 
 var Product = function (values) {
   _.defaults(values, {
+    type: null,
+    name: null,
     retailPrice: null,
     margin: null,
     weeklySales: []
