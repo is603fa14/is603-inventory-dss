@@ -46,7 +46,7 @@
   <!-- define an inventory -->
   <xs:complexType name="inventoryType">
     <xs:sequence>
-      <xs:element name="producty" type="productType" minOccurs="1" 
+      <xs:element name="product" type="productType" minOccurs="1" 
         maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
