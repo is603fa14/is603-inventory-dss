@@ -26,11 +26,22 @@ router.get('/sample', function (req, res) {
   console.log(xmlPath);
   var dataService = new XmlService(xmlPath);
   // create a forecasting service, pass in the XML file
-  var forecastingService = new ForecastingService(dataService);
+  //var forecastingService = new ForecastingService(dataService);
   // create a model 
-  var model = new SimpleForecastingModel();
+  //var model = new SimpleForecastingModel();
 
-  res.send(forecastingService.forecastOrders(model));
-});
+  //res.send(forecastingService.forecastOrders(model));
+           dataService.getProducts(function(result)
+                                   {
+                                   res.send(result.products);
+                                   }
+                                   
+                                   )
+           
+           
+           
+           
+    
+           });
 
 module.exports = router;
