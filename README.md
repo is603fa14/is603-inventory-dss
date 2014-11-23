@@ -97,3 +97,48 @@ editor of choice.
 All version control should be handled using Git on the **host machine**.  
 (Using Git on the guest machine may create problems with tracking code 
 changes.)
+
+
+Generating Data
+---------------
+
+All data is maintained in the `data` directory.  
+
+Data is maintained in a Microsoft Excel spreadsheet.  The application expects 
+the data in an XML format for processing.  Therefore, it is necessary to 
+transform the data from Excel to XML.  This is done using the following 
+procedure:
+
+  1.  Define an XML Schema for the Excel format; this schema will not match 
+      the final schema, but will act as an intermediary data format. 
+  2.  Map the Excel data to the schema using the procedure 
+      [here](http://office.microsoft.com/en-us/excel-help/add-map-and-unmap-xml-elements-HP001041933.aspx).
+  3.  Export the Excel data to XML using the procedure 
+      [here](http://office.microsoft.com/en-us/excel-help/export-xml-data-HP010206401.aspx#BM1).
+  4.  Transform the XML data from Excel into the expected data format using
+      XSLT.
+
+Steps 1-2 only need to be performed on **new** spreadsheets; if changes are 
+made to the existing spreadsheets, then all that is needed is to re-export
+the data from Excel, and transform using XSLT.  
+
+  1.  To re-export the data:
+    1.  Open the Excel spreadsheet
+    
+    2.  In the "Developer" tab on the ribbon, click "Export" in the "XML"
+        section.  (If the Developer tab is not visible, follow 
+        [these instructions](http://msdn.microsoft.com/en-us/library/bb608625.aspx)).
+
+    3.  Save the file in the `data` directory as `inventoryData_excel.xml`.
+  2.  To transform the data:
+    1.  Open a terminal/command prompt, and navigate to the `data` directory.
+    
+    2.  Use Saxon to perform the transformation:
+    	```
+        java -jar saxon9he.jar -s:inventoryData_excel.xml -xsl:inventoryData_excel.xsl -o:inventoryData.xml
+        ```
+
+This will output the transformed data to `data/inventoryData.xml`.  
+
+(Note: this process requires a [Java](https://www.java.com/en/) executable to 
+be on the PATH.)
