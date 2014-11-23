@@ -3,47 +3,48 @@
     {{#each products}}
     <div class="product">
       <h2>{{name}}</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Retali Price</th>
-            <th>Profit Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{name}}</td>
-            <td>{{type}}</td>
-            <td>{{retailPrice}}</td>
-            <td>{{margin}}</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Weekly Sales</h3>
-      <table class="table table-striped sales">
-        <thead>
-          <tr>
-            <th>Week ID</th>
-            <th>Quantity Sold</th>
-            <th>Market Average</th>
-            <th>Number of Stores</th>
-            <th>Promotion?</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each weeklySales}}
-          <tr>
-              <td>{{id}}</td>
-              <td>{{quantity}}</td>
-              <td>{{marketAverage}}</td>
-              <td>{{numStores}}</td>
-              <td>{{#if promo}}Yes{{else}}No{{/if}}</td>
-          </tr>
-          {{/each}}
-        </tbody>
-      </table>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Details</h3>
+          <dl>
+            <dt>Name</dt>
+            <dd>{{name}}</dd>
+            <dt>Type</dt>
+            <dd>{{type}}</dd>
+            <dt>Retail Price</dt>
+            <dd>{{retailPrice}}</dd>
+            <dt>Profit Margin</dt>
+            <dd>{{margin}}</dd>
+          </dl>
+        </div>
+        <div class="col-sm-8">
+          <h3>Weekly Sales</h3>
+          <div class="pre-scrollable">
+            <table class="table table-striped sales">
+              <thead>
+                <tr>
+                  <th>Week ID</th>
+                  <th>Quantity Sold</th>
+                  <th>Market Average</th>
+                  <th>Number of Stores</th>
+                  <th>Promotion?</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each weeklySales}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{quantity}}</td>
+                    <td>{{marketAverage}}</td>
+                    <td>{{numStores}}</td>
+                    <td>{{#if promo}}Yes{{else}}No{{/if}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
     {{/each}}
   </div>
