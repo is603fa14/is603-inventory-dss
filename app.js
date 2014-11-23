@@ -4,24 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var path = require('path');
-
-var ContextService = require('./services/ContextService');
-var XmlService = require('./services/XmlService');
 
 var routes = require('./routes/index');
 var inventory = require('./routes/inventory');
 
 var app = express();
-var context = new ContextService();
-
-context.put('dataService', new XmlService(path.join(__dirname, 'data/inventoryData.xml')));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.set('appContext', context);
+// store the context
+app.set('appContext', require('./context'));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
