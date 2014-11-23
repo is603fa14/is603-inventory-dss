@@ -20,7 +20,8 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/sample', function (req, res) {
+router.get('/sample', function (req, res)
+           {
   // specify the XML file to use
   var xmlPath = path.join(__dirname, '../data/sampleData.xml');
   console.log(xmlPath);
@@ -33,15 +34,11 @@ router.get('/sample', function (req, res) {
   //res.send(forecastingService.forecastOrders(model));
            dataService.getProducts(function(result)
                                    {
-                                   res.send(result.products);
+                                   res.send(result);
                                    }
                                    
                                    )
            
-           
-           
-           
-    
            });
 
 module.exports = router;
