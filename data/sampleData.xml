@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <products>
 
-//normal case
-
+<!-- normal case -->
 <product type="candy" name="Reeses">
     <retailPrice>1.99</retailPrice>
     <margin>0.50</margin>
@@ -29,8 +28,7 @@
   
 </product>
 
-
-//less margin and low sales idealy should be discontinued from store
+<!-- less margin and low sales idealy should be discontinued from store -->
 <product type="candy" name="Hershey">
     <retailPrice>2.99</retailPrice>
     <margin>0.10</margin>
@@ -56,10 +54,10 @@
     
 </product>
 
-
-//less nos which eventually rises high with sales also
-//output week 3 order more because of promo
-
+<!--
+less nos which eventually rises high with sales also
+output week 3 order more because of promo
+-->
 <product type="candy" name="Mnm">
     <retailPrice>0.99</retailPrice>
     <margin>0.20</margin>
