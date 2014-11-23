@@ -4,15 +4,29 @@
     <title>{{title}} | Inventory Support System</title>
     <link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script type='text/javascript' src='/bootstrap/js/bootstrap.js'></script>
   </head>
   <body>
     <div class="container">
       <header>
         <nav class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" 
+              data-toggle="collapse" data-target="#main-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="/">
               Inventory Support System
             </a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="nav navbar-nav">
+              <li><a href="/inventory">Inventory</a></li>
+            </ul>
           </div>
         </nav>
       </header>
@@ -24,6 +38,5 @@
         <p><small>For development only</small></p>
       </footer>
     </div>
-    <script type='text/javascript' src='/bootstrap/js/bootstrap.js' />
   </body>
 </html>

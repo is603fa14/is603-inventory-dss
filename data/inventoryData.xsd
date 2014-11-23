@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- define strings -->
+  <xs:simpleType name="stringType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <!-- define integers -->
+  <xs:simpleType name="intType">
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+
+  <!-- define booleans -->
+  <xs:simpleType name="boolType">
+    <xs:restriction base="xs:boolean" />
+  </xs:simpleType>
+
+  <!-- define money type -->
+  <xs:simpleType name="moneyType">
+    <xs:restriction base="xs:decimal" />
+  </xs:simpleType>
+
+  <!-- define week -->
+  <xs:complexType name="weekType">
+    <xs:sequence>
+      <xs:element name="quantity" type="intType" />
+      <xs:element name="mkavg" type="intType" />
+      <xs:element name="nos" type="intType" />
+    </xs:sequence>
+    <xs:attribute name="id" type="intType" use="required" />
+    <xs:attribute name="promo" type="boolType" />
+  </xs:complexType>
+
+  <!-- define product -->
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="retailPrice" type="moneyType" />
+      <xs:element name="margin" type="moneyType" />
+      <xs:element name="week" type="weekType" minOccurs="0" 
+        maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="type" type="stringType" />
+    <xs:attribute name="name" type="stringType" />
+  </xs:complexType>
+
+  <!-- define inventory -->
+  <xs:complexType name="inventoryType">
+    <xs:sequence>
+      <xs:element name="product" type="productType" minOccurs="0"
+        maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- define root -->
+  <xs:element name="products" type="inventoryType" />
+</xs:schema>

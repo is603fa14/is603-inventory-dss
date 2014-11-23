@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="col-sm-12">
+    <p>
+      Use the form below to select a forecasting model to predict next 
+      week's projected demand.  This value is used to determine how much 
+      of each product to order each week.
+    </p>
+    <form action="/inventory/nextWeek" method="GET" class="form-inline">
+        <div class="form-group required">
+          <label for="select-model">Model</label>
+          <select class="form-control" name="model" id="select-model" required
+            describedby="select-model-help">
+            <option value=""></option>
+            {{#each models}}
+            <option name="{{value}}" {{#if selected}}selected{{/if}}>
+              {{name}}
+            </option>
+            {{/each}}
+          </select>
+          <small id="select-model-help" class="help-block sr-only">
+            Select a model to forecast next week's demand
+          </small>
+        </div>
+        <button class="btn btn-primary" type="submit">Show</button> 
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    {{#each products}}
+    <div class="product">
+      <h2>{{name}}</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Details</h3>
+          <dl>
+            <dt>Name</dt>
+            <dd>{{name}}</dd>
+            <dt>Type</dt>
+            <dd>{{type}}</dd>
+            <dt>Retail Price</dt>
+            <dd>{{retailPrice}}</dd>
+            <dt>Profit Margin</dt>
+            <dd>{{margin}}</dd>
+          </dl>
+        </div>
+        <div class="col-sm-8">
+          <h3>Weekly Sales</h3>
+          <div class="pre-scrollable">
+            <table class="table table-striped sales">
+              <thead>
+                <tr>
+                  <th>Week ID</th>
+                  <th>Quantity</th>
+                  <th>Market Average</th>
+                  <th>Number of Stores</th>
+                  <th>Promotion?</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each weeklySales}}
+                <tr{{#if forecasted}} class="info"{{/if}}>
+                    <td>{{id}}</td>
+                    <td>{{quantity}}</td>
+                    <td>{{marketAverage}}</td>
+                    <td>{{numStores}}</td>
+                    <td>{{#if promo}}Yes{{else}}No{{/if}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

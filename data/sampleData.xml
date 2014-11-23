@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<products>
+
+<!-- normal case -->
+<product type="candy" name="Reeses">
+    <retailPrice>1.99</retailPrice>
+    <margin>0.50</margin>
+  
+  
+  <week id="1">
+      <qty>23</qty>
+      <mkavg> 20</mkavg>
+      <nos>98</nos>
+  </week>
+  
+  <week id="2">
+      <qty>33</qty>
+      <mkavg> 25</mkavg>
+      <nos>50</nos>
+  </week>
+  
+  <week id="3" promo="true">
+      <qty>13</qty>
+      <mkavg> 25</mkavg>
+      <nos>80</nos>
+  </week>
+  
+  
+</product>
+
+<!-- less margin and low sales idealy should be discontinued from store -->
+<product type="candy" name="Hershey">
+    <retailPrice>2.99</retailPrice>
+    <margin>0.10</margin>
+    
+    <week id="1">
+        <qty>13</qty>
+        <mkavg> 60</mkavg>
+        <nos>90</nos>
+    </week>
+    
+    <week id="2">
+        <qty>13</qty>
+        <mkavg> 55</mkavg>
+        <nos>90</nos>
+    </week>
+    
+    <week id="3" promo="true">
+        <qty>10</qty>
+        <mkavg> 105</mkavg>
+        <nos>100</nos>
+    </week>
+    
+    
+</product>
+
+<!--
+less nos which eventually rises high with sales also
+output week 3 order more because of promo
+-->
+<product type="candy" name="Mnm">
+    <retailPrice>0.99</retailPrice>
+    <margin>0.20</margin>
+    
+    
+    <week id="1">
+        <qty>53</qty>
+        <mkavg> 60</mkavg>
+        <nos>5</nos>
+    </week>
+    
+    <week id="2">
+        <qty>53</qty>
+        <mkavg> 65</mkavg>
+        <nos>30</nos>
+    </week>
+    
+    <week id="3" promo="true">
+        <qty>73</qty>
+        <mkavg> 75</mkavg>
+        <nos>60</nos>
+    </week>
+    
+    
+</product>
+
+
+
+
+
+
+
+
+
+
+
+
+</products>
