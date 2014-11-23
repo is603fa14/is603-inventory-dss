@@ -1,5 +1,6 @@
 var assert = require('assert');
 var _ = require('underscore');
+var BaseForecastingModel = require('./models/BaseForecastingModel');
 
 // controller must pass in the database at instantiation
 // this makes it easy to test - can easily pass in dummy databases without 
@@ -9,12 +10,34 @@ var ForecastingService = function (databaseService) {
   assert(_.contains(_.functions(databaseService), 'getProducts'), 
     'Database service must have function getProducts()');
   this.databaseService = databaseService;
+  this.models = {};
 
-  this.getProducts = function () {
-    var products = this.databaseService.getProducts();
+  this.addModel = function (name, model) {
+    if (!_.isString(name) || !(model instanceof BaseForecastingModel)) {
+      return;
+    }
 
-    // guarentee to return an array
-    return (_.isArray(products)) ? products : [];
+    this.models[name] = model;
+  };
+
+  this.getModel = function (name) {
+    if (!this.hasModel(name)) {
+      return;
+    }
+
+    return this.models[name];
+  };
+
+  this.getModelNames = function () {
+    return _.keys(this.models);
+  };
+
+  this.hasModel = function (name) {
+    return this.models.hasOwnProperty(name);
+  };
+
+  this.getProducts = function (callback) {
+    this.databaseService.getProducts(_.bind(callback, this));
   };
 
   // the controller will call this method to do the actual work 
@@ -22,7 +45,7 @@ var ForecastingService = function (databaseService) {
   // choose which model to use
   // the model does the actual forecasting, this method just handles the 
   // logistics 
-  this.forecastOrders = function (model, options) {
+  this.forecastOrders = function (model, options, callback) {
     // options argument: an object of options - this allows us to easily 
     // add new parameters in the future
 
@@ -41,22 +64,17 @@ var ForecastingService = function (databaseService) {
     _.defaults(options, defaultOptions);
 
     // get the products 
-    var products = this.getProducts();
+    this.getProducts(function (products) {
+      for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+        var demand = model.forecastDemand(product);
 
-    // this will store the forecasts
-    var forecasts = [];
+        // store the forecasted sale amount in the product
+        product.addForecastedSale(demand);
+      }
 
-    for (var i = 0; i < products.length; i++) {
-      var product = products[i];
-      var demand = model.forecastDemand(product);
-
-      // TODO do any additional processing on the forecast
-
-      // store demand in array
-      forecasts.push(demand);
-    }
-
-    return forecasts;
+      callback(null, products);
+    });
   };
 
 };

@@ -29,8 +29,8 @@
   </xsl:template>
 
   <xsl:template match="/">
-    <inventory>
+    <products>
       <xsl:apply-templates />
-    </inventory>
+    </products>
   </xsl:template>
 </xsl:stylesheet>
