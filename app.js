@@ -5,14 +5,22 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var ContextService = require('./services/ContextService');
+var XmlService = require('./services/DummyXmlService');
+
 var routes = require('./routes/index');
-var test = require('./routes/test');
+var inventory = require('./routes/inventory');
 
 var app = express();
+var context = new ContextService();
+
+context.put('dataService', new XmlService());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+app.set('appContext', context);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -24,7 +32,7 @@ app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/test', test);
+app.use('/inventory', inventory);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
