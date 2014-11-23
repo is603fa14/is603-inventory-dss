@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<inventory xmlns:xlsData="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd"
+<products xmlns:xlsData="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd"
            xmlns="http://is.umbc.edu/is603/inventory/productData inventoryData.xsd">
 	  <product type="candy" name="Snckrs 2pc KS 3.29z">
       <retailPrice/>
@@ -2809,4 +2809,4 @@
          <nos>91</nos>
       </week>
    </product>
-</inventory>
+</products>

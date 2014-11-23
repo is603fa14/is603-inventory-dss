@@ -23,7 +23,7 @@ router.get('/', function(req, res) {
 router.get('/sample', function (req, res)
            {
   // specify the XML file to use
-  var xmlPath = path.join(__dirname, '../data/sampleData.xml');
+  var xmlPath = path.join(__dirname, '../data/inventoryData.xml');
   console.log(xmlPath);
   var dataService = new XmlService(xmlPath);
   // create a forecasting service, pass in the XML file
