@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- define strings -->
+  <xs:simpleType name="stringType">
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+
+  <!-- define integers -->
+  <xs:simpleType name="intType">
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+
+  <!-- define a product -->
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="description" type="stringType" />
+      <xs:element name="minQuantity" type="intType" />
+      <xs:element name="week1" type="intType" />
+      <xs:element name="week2" type="intType" />
+      <xs:element name="week3" type="intType" />
+      <xs:element name="week4" type="intType" />
+      <xs:element name="week5" type="intType" />
+      <xs:element name="week6" type="intType" />
+      <xs:element name="week7" type="intType" />
+      <xs:element name="week8" type="intType" />
+      <xs:element name="week9" type="intType" />
+      <xs:element name="week10" type="intType" />
+      <xs:element name="week11" type="intType" />
+      <xs:element name="week12" type="intType" />
+      <xs:element name="week13" type="intType" />
+      <xs:element name="week14" type="intType" />
+      <xs:element name="week15" type="intType" />
+      <xs:element name="week16" type="intType" />
+      <xs:element name="week17" type="intType" />
+      <xs:element name="week18" type="intType" />
+      <xs:element name="week19" type="intType" />
+      <xs:element name="week20" type="intType" />
+      <xs:element name="salesTotal" type="intType" />
+      <xs:element name="marketAPS" type="intType" />
+      <xs:element name="numStores" type="intType" />
+      <xs:element name="monthlySales" type="intType" />
+      <xs:element name="currentPromotion" type="stringType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- define an inventory -->
+  <xs:complexType name="inventoryType">
+    <xs:sequence>
+      <xs:element name="product" type="productType" minOccurs="1" 
+        maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- define the root -->
+  <xs:element name="inventory" type="inventoryType" />
+</xs:schema>
