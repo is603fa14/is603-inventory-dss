@@ -15,7 +15,13 @@ var Product = function (values) {
   this.addWeeklySale = function (weeklySale) {
     assert(weeklySale instanceof WeeklySale, 'Unexpected data type');
     this.weeklySales.push(weeklySale);
-  }
+  };
+
+  this.addForecastedSale = function (forecastedSale) {
+    assert(forecastedSale instanceof WeeklySale, 'Unexpected data type');
+    forecastedSale.forecasted = true;
+    this.weeklySales.unshift(forecastedSale);
+  };
 };
 
 module.exports = Product;

@@ -6,7 +6,8 @@ var WeeklySale = function (values) {
     quantity: null,
     marketAverage: null,
     numStores: null,
-    promo: false
+    promo: false,
+    forecasted: false
   });
   _.extend(this, values);
 };
