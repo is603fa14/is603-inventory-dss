@@ -52,5 +52,5 @@
   </xs:complexType>
 
   <!-- define root -->
-  <xs:element name="inventory" type="inventoryType" />
+  <xs:element name="products" type="inventoryType" />
 </xs:schema>
