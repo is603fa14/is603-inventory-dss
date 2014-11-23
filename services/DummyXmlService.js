@@ -98,7 +98,7 @@ var DummyXmlService = function () {
     products.push(hershey);
     products.push(mm);
 
-    callback(null, products);
+    callback(products);
   }
 }
 

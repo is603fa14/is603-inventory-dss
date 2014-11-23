@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
   var context = req.app.get('appContext');
   var dataService = context.get('dataService');
 
-  dataService.getProducts(function (err, products) {
+  dataService.getProducts(function (products) {
     res.render('inventory/index', { 
       title: 'Current Inventory',
       products: products 
