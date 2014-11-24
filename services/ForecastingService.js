@@ -71,6 +71,13 @@ var ForecastingService = function (databaseService) {
 
         // store the forecasted sale amount in the product
         product.addForecastedSale(demand);
+
+        if (!product.hasOwnProperty('debug')) {
+          product.debug = '';
+        }
+
+        product.debug += '\n' + demand.debug;
+        product.debug = product.debug.trim();
       }
 
       callback(null, products);
