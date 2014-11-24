@@ -13,13 +13,15 @@ var SimpleForecastingModel = function () {
     var average = StatUtils.mean(salesArr);
     var stdDeviation = StatUtils.stdDeviation(salesArr, {avg: average});
     var trend = 1;
+    var value = average + (trend * stdDeviation);
 
     var result = {
-      value: Math.ceil(average + (trend * stdDeviation)),
+      value: Math.ceil(value),
       debug: {
         average: average,
         stdDeviation: stdDeviation,
-        trend: trend
+        trend: trend,
+        raw: value
       }
     };
     
