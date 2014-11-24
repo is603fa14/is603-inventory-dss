@@ -11,11 +11,13 @@ var LinearRegForecastingModel = function () {
   this.getForecastedQuantity = function (forProduct) {
     var salesArr = this.getWeeklySalesArr(forProduct);
     var bestFit = StatUtils.bestFit(salesArr);
+    var value = bestFit.f(salesArr.length + 1);
 
     var result = {
-      value: Math.ceil(bestFit.f(salesArr.length + 1)),
+      value: Math.ceil(value),
       debug: {
-        bestFit: bestFit
+        bestFit: bestFit,
+        raw: value
       }
     };
     
