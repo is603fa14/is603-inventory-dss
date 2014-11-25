@@ -5,24 +5,62 @@
       week's projected demand.  This value is used to determine how much 
       of each product to order each week.
     </p>
-    <form action="/inventory/nextWeek" method="GET" class="form-inline">
-        <div class="form-group required">
-          <label for="select-model">Model</label>
-          <select class="form-control" name="model" id="select-model" required
-            describedby="select-model-help">
-            <option value=""></option>
-            {{#each models}}
-            <option name="{{value}}" {{#if selected}}selected{{/if}}>
-              {{name}}
-            </option>
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="/inventory/nextWeek" method="GET" class="form-inline">
+            <div class="form-group required">
+              <label for="select-model">Model</label>
+              <select class="form-control" name="model" id="select-model" required
+                describedby="select-model-help">
+                <option value=""></option>
+                {{#each models}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-model-help" class="help-block sr-only">
+                Select a model to forecast next week's demand
+              </small>
+            </div>
+            <button class="btn btn-primary" type="submit">Show</button> 
+        </form>
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        <div class="well well-sm">
+          <dl class="model-descriptions">
+            {{#each text.models}}
+            <dt class="model-description-{{@key}} hide">{{name}}</dt>
+            <dd class="model-description-{{@key}} hide"><p>{{description}}</p></dd>
             {{/each}}
-          </select>
-          <small id="select-model-help" class="help-block sr-only">
-            Select a model to forecast next week's demand
-          </small>
+          </dl>
         </div>
-        <button class="btn btn-primary" type="submit">Show</button> 
-    </form>
+        <script type="text/javascript">
+        $(document).ready(function () {
+          var toggle = function (modelName) {
+            var selector = '.model-description-' + modelName;
+            var matched = $(selector);
+            var well = $($('.model-descriptions').parents('.well').get(0));
+            $('.model-descriptions').children().hide();
+            well.hide();
+            if (matched.length > 0) {
+              matched.show();  
+              well.show();
+            }
+          };
+
+          $('.model-descriptions').children('.hide').hide().removeClass('hide');
+
+          $('#select-model').change(function (event) {
+            var value = $(this).val();
+            toggle(value);
+          });
+
+          toggle($('#select-model').val());
+        });
+        </script>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">

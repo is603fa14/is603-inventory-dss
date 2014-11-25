@@ -2,17 +2,25 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
-var getForecastingService = function (request) {
-	return request.app.get('appContext').forecastingService;
+var getContext = function (request) {
+	return request.app.get('appContext');
 };
 
-var getModelSelections = function (models, curModel) {
+var getTextLookups = function (request) {
+	return getContext(request).textLookups;
+};
+
+var getForecastingService = function (request) {
+	return getContext(request).forecastingService;
+};
+
+var getModelSelections = function (models, curModel, textLookup) {
 	var options = [];
 
 	for (var key in models) {
 		options.push({
 			value: key,
-			name: key,
+			name: textLookup.models[key].name,
 			selected: (key === curModel)
 		});
 	}
@@ -22,7 +30,9 @@ var getModelSelections = function (models, curModel) {
 
 router.get('/', function(req, res, next) {
   var forecastingService = getForecastingService(req);
-  var modelSelections = getModelSelections(forecastingService.models);
+  var textLookups = getTextLookups(req);
+  var modelSelections = getModelSelections(forecastingService.models, null,
+  	textLookups);
 
   forecastingService.getProducts(function (err, products) {
   	if (err) {
@@ -33,7 +43,8 @@ router.get('/', function(req, res, next) {
     res.render('inventory/index', { 
       title: 'Current Inventory',
       products: products,
-      models: modelSelections
+      models: modelSelections,
+      text: getTextLookups(req)
     });
   });
 });
@@ -63,9 +74,11 @@ router.get('/:index/nextWeek', function (req, res, next) {
 
 router.get('/nextWeek', function (req, res, next) {
 	var forecastingService = getForecastingService(req);
+	var textLookups = getTextLookups(req);
 	var modelName = req.query['model'];
 	var model = forecastingService.getModel(modelName);
-	var modelSelections = getModelSelections(forecastingService.models, modelName);
+	var modelSelections = getModelSelections(forecastingService.models, modelName,
+		textLookups);
 
 	if (!model) {
 		next(new Error('Invalid model name: "' + modelName + '"'));
@@ -81,7 +94,8 @@ router.get('/nextWeek', function (req, res, next) {
 		res.render('inventory/index', {
 			title: 'Forecasted Sales for Next Week',
 			products: products,
-			models: modelSelections
+			models: modelSelections,
+			text: textLookups
 		});
 	});
 });
