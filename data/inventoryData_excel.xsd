@@ -25,33 +25,33 @@
     <xs:sequence>
       <xs:element name="name" type="stringType" />
       <xs:element name="description" type="stringType" />
-      <xs:element name="minQuantity" type="intType" />
+      <xs:element name="minQuantity" type="intType" minOccurs="0" />
       <xs:element name="retailPrice" type="moneyType" />
-      <xs:element name="inventory" type="intType" />
-      <xs:element name="week1" type="intType" />
-      <xs:element name="week2" type="intType" />
-      <xs:element name="week3" type="intType" />
-      <xs:element name="week4" type="intType" />
-      <xs:element name="week5" type="intType" />
-      <xs:element name="week6" type="intType" />
-      <xs:element name="week7" type="intType" />
-      <xs:element name="week8" type="intType" />
-      <xs:element name="week9" type="intType" />
-      <xs:element name="week10" type="intType" />
-      <xs:element name="week11" type="intType" />
-      <xs:element name="week12" type="intType" />
-      <xs:element name="week13" type="intType" />
-      <xs:element name="week14" type="intType" />
-      <xs:element name="week15" type="intType" />
-      <xs:element name="week16" type="intType" />
-      <xs:element name="week17" type="intType" />
-      <xs:element name="week18" type="intType" />
-      <xs:element name="week19" type="intType" />
-      <xs:element name="week20" type="intType" />
-      <xs:element name="salesTotal" type="intType" />
+      <xs:element name="inventory" type="intType" minOccurs="0" />
+      <xs:element name="week1" type="intType" minOccurs="0" />
+      <xs:element name="week2" type="intType" minOccurs="0" />
+      <xs:element name="week3" type="intType" minOccurs="0" />
+      <xs:element name="week4" type="intType" minOccurs="0" />
+      <xs:element name="week5" type="intType" minOccurs="0" />
+      <xs:element name="week6" type="intType" minOccurs="0" />
+      <xs:element name="week7" type="intType" minOccurs="0" />
+      <xs:element name="week8" type="intType" minOccurs="0" />
+      <xs:element name="week9" type="intType" minOccurs="0" />
+      <xs:element name="week10" type="intType" minOccurs="0" />
+      <xs:element name="week11" type="intType" minOccurs="0" />
+      <xs:element name="week12" type="intType" minOccurs="0" />
+      <xs:element name="week13" type="intType" minOccurs="0" />
+      <xs:element name="week14" type="intType" minOccurs="0" />
+      <xs:element name="week15" type="intType" minOccurs="0" />
+      <xs:element name="week16" type="intType" minOccurs="0" />
+      <xs:element name="week17" type="intType" minOccurs="0" />
+      <xs:element name="week18" type="intType" minOccurs="0" />
+      <xs:element name="week19" type="intType" minOccurs="0" />
+      <xs:element name="week20" type="intType" minOccurs="0" />
+      <xs:element name="salesTotal" type="intType" minOccurs="0" />
       <xs:element name="marketAPS" type="intType" />
       <xs:element name="numStores" type="intType" />
-      <xs:element name="weeklyAvg" type="doubleType" />
+      <xs:element name="weeklyAvg" type="doubleType" minOccurs="0" />
       <xs:element name="currentPromotion" type="stringType" />
     </xs:sequence>
   </xs:complexType>

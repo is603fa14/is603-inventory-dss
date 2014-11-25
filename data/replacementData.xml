@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xlsData="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd"
+          xmlns="http://is.umbc.edu/is603/inventory/productData inventoryData.xsd">
+	  <product type="candy" name="Snickers Mixed Nuts">
+      <description>Snickers Mixed Nuts 1.86z</description>
+      <retailPrice>1.39</retailPrice>
+      <margin/>
+      <inventory/>
+      <mkavg>15</mkavg>
+      <nos>79</nos>
+   </product>
+	  <product type="candy" name="Birthday Cake M&amp;M's">
+      <description>M&amp;M Brthday Cake 1.5z</description>
+      <retailPrice>1.39</retailPrice>
+      <margin/>
+      <inventory/>
+      <mkavg>12</mkavg>
+      <nos>67</nos>
+   </product>
+	  <product type="candy" name="Kind Protein Bar">
+      <description>Kind Protein Bar 1.8z</description>
+      <retailPrice>1.99</retailPrice>
+      <margin/>
+      <inventory/>
+      <mkavg>10</mkavg>
+      <nos>55</nos>
+   </product>
+	  <product type="candy" name="Peanut Butter Butterfinger (King Size)">
+      <description>Butterfinger PenBut KS 3.0Z</description>
+      <retailPrice>1.99</retailPrice>
+      <margin/>
+      <inventory/>
+      <mkavg>25</mkavg>
+      <nos>71</nos>
+   </product>
+</products>

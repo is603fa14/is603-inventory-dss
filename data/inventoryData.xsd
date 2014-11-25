@@ -37,7 +37,9 @@
       <xs:element name="description" type="stringType" />
       <xs:element name="retailPrice" type="moneyType" />
       <xs:element name="margin" type="moneyType" />
-      <xs:element name="inventory" type="intTYpe" />
+      <xs:element name="inventory" type="intType" />
+      <xs:element name="mkavg" type="intType" minOccurs="0" />
+      <xs:element name="nos" type="intType" minOccurs="0" />
       <xs:element name="week" type="weekType" minOccurs="0" 
         maxOccurs="unbounded" />
     </xs:sequence>
