@@ -10,11 +10,24 @@
     <xs:restriction base="xs:integer" />
   </xs:simpleType>
 
+  <!-- define decimal -->
+  <xs:simpleType name="doubleType">
+    <xs:restriction base="xs:decimal" />
+  </xs:simpleType>
+
+  <!-- define money type -->
+  <xs:simpleType name="moneyType">
+    <xs:restriction base="xs:decimal" />
+  </xs:simpleType>
+
   <!-- define a product -->
   <xs:complexType name="productType">
     <xs:sequence>
+      <xs:element name="name" type="stringType" />
       <xs:element name="description" type="stringType" />
       <xs:element name="minQuantity" type="intType" />
+      <xs:element name="retailPrice" type="moneyType" />
+      <xs:element name="inventory" type="intType" />
       <xs:element name="week1" type="intType" />
       <xs:element name="week2" type="intType" />
       <xs:element name="week3" type="intType" />
@@ -38,7 +51,7 @@
       <xs:element name="salesTotal" type="intType" />
       <xs:element name="marketAPS" type="intType" />
       <xs:element name="numStores" type="intType" />
-      <xs:element name="monthlySales" type="intType" />
+      <xs:element name="weeklyAvg" type="doubleType" />
       <xs:element name="currentPromotion" type="stringType" />
     </xs:sequence>
   </xs:complexType>

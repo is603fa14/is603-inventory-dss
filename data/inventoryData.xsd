@@ -34,8 +34,10 @@
   <!-- define product -->
   <xs:complexType name="productType">
     <xs:sequence>
+      <xs:element name="description" type="stringType" />
       <xs:element name="retailPrice" type="moneyType" />
       <xs:element name="margin" type="moneyType" />
+      <xs:element name="inventory" type="intTYpe" />
       <xs:element name="week" type="weekType" minOccurs="0" 
         maxOccurs="unbounded" />
     </xs:sequence>
