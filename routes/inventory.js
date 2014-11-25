@@ -20,11 +20,16 @@ var getModelSelections = function (models, curModel) {
 	return options;
 };
 
-router.get('/', function(req, res) {
+router.get('/', function(req, res, next) {
   var forecastingService = getForecastingService(req);
   var modelSelections = getModelSelections(forecastingService.models);
 
-  forecastingService.getProducts(function (products) {
+  forecastingService.getProducts(function (err, products) {
+  	if (err) {
+  		next(err);
+  		return;
+  	}
+
     res.render('inventory/index', { 
       title: 'Current Inventory',
       products: products,
@@ -44,7 +49,12 @@ router.get('/:index/nextWeek', function (req, res, next) {
 		return;
 	}
 
-	forecastingService.getProducts(function (products) {
+	forecastingService.getProducts(function (err, products) {
+		if (err) {
+			next(err);
+			return;
+		}
+
 		var product = products[prodIndex];
 		var forecast = model.forecastDemand(product);
 		res.send({forecast: forecast});

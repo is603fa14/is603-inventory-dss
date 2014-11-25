@@ -64,7 +64,12 @@ var ForecastingService = function (databaseService) {
     _.defaults(options, defaultOptions);
 
     // get the products 
-    this.getProducts(function (products) {
+    this.getProducts(function (err, products) {
+      if (err) {
+        callback(err);
+        return;
+      }
+      
       for (var i = 0; i < products.length; i++) {
         var product = products[i];
         var demand = model.forecastDemand(product);

@@ -6,8 +6,10 @@ var Product = function (values) {
   _.defaults(values, {
     type: null,
     name: null,
+    description: null,
     retailPrice: null,
     margin: null,
+    inventory: null,
     weeklySales: []
   });
   _.extend(this, values);
