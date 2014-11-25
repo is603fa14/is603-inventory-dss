@@ -10,6 +10,8 @@ var Context = function () {
 
 	this.forecastingService.addModel('simple', new SimpleForecastingModel());
 	this.forecastingService.addModel('linearRegression', new LinearRegForecastingModel());
+
+  this.replacementDataService = new XmlService(path.join(__dirname, 'data/replacementData.xml'));
 };
 
 module.exports = new Context();

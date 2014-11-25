@@ -30,23 +30,27 @@ var XmlService = function (fileName) {
                 description: xmlProduct['description'],
                 retailPrice: xmlProduct['retailPrice'],
                 margin: xmlProduct['margin'],
-                inventory: xmlProduct['inventory']
+                inventory: xmlProduct['inventory'],
+                marketAverage: xmlProduct['mkavg'],
+                numStores: xmlProduct['nos']
             });
         
-            for (var weekKey in xmlProduct['week']) {
-                var xmlWeek = xmlProduct['week'][weekKey];
-                var week = new WeeklySale({
-                    id: xmlWeek['$']['id'],
-                    quantity: xmlWeek['qty'],
-                    marketAverage: xmlWeek['mkavg'],
-                    numStores: xmlWeek['nos'],
-                    promo: xmlWeek['$']['promo']
-                });
-        
-                product.addWeeklySale(week);
+            if (xmlProduct.hasOwnProperty('week') && xmlProduct['week'].length > 0) {
+                for (var weekKey in xmlProduct['week']) {
+                    var xmlWeek = xmlProduct['week'][weekKey];
+                    var week = new WeeklySale({
+                        id: xmlWeek['$']['id'],
+                        quantity: xmlWeek['qty'],
+                        marketAverage: xmlWeek['mkavg'],
+                        numStores: xmlWeek['nos'],
+                        promo: xmlWeek['$']['promo']
+                    });
+            
+                    product.addWeeklySale(week);
+                }
             }
+
             products.push(product);
-        
         }
         
         callback(null, products);
