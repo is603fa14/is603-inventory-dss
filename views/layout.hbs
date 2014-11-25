@@ -39,5 +39,22 @@
         <p><small>For development only</small></p>
       </footer>
     </div>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      // use javascript to show which navbar item should be selected
+      // select if the first part of the current path matches the HREF
+      var curPath = window.location.pathname;
+      if (curPath) {
+        var pathParts = curPath.split('/');
+        if (pathParts.length > 1 && pathParts[1]) {
+          var matching = $('#main-navbar').find('a[href^="/' + pathParts[1] + '"]');
+          if (matching.length > 0) {
+            var wrapper = $(matching.parents('li').get(0));
+            wrapper.addClass('active');
+          }
+        }
+      }
+    });
+    </script>
   </body>
 </html>
