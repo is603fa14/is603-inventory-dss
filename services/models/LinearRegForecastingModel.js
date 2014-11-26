@@ -1,11 +1,8 @@
-var util = require('util'); // include a system module (util: http://nodejs.org/api/util.html)
-var _ = require('underscore');
-var BaseForecastingModel = require('./BaseForecastingModel'); // include the base classs
+var util = require('util'); 
+var BaseForecastingModel = require('./BaseForecastingModel'); 
 var StatUtils = require('../../utils/StatUtils');
 
-// class definition
 var LinearRegForecastingModel = function () {
-  // super constructor call 
   BaseForecastingModel.call(this);
 
   this.getForecastedQuantity = function (weeks, product, options) {

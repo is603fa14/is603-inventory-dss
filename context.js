@@ -4,6 +4,7 @@ var XmlService = require('./services/XmlService');
 var ForecastingService = require('./services/ForecastingService');
 var SimpleForecastingModel = require('./services/models/SimpleForecastingModel');
 var LinearRegForecastingModel = require('./services/models/LinearRegForecastingModel');
+var TDistributionModel = require('./services/models/TDistributionModel');
 
 var Context = function () {
   this.textLookups = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/text_lookups.json')));
@@ -12,6 +13,7 @@ var Context = function () {
 
 	this.forecastingService.addModel('simple', new SimpleForecastingModel());
 	this.forecastingService.addModel('linearRegression', new LinearRegForecastingModel());
+  this.forecastingService.addModel('tDistribution', new TDistributionModel());
 
   this.replacementDataService = new XmlService(path.join(__dirname, 'data/replacementData.xml'));
 };

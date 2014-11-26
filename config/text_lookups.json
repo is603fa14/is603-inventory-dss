@@ -7,6 +7,10 @@
     "linearRegression": {
       "name": "Linear Regression",
       "description": "Uses the least squares method to build a simple linear regression model, which is used to predict future demand using the calculated trend from the last 20 weeks."
+    },
+    "tDistribution": {
+      "name": "T-distribution",
+      "description": "Uses a T-distribution to determine the upper limit of next week's demand, within a specified confidence interval."
     }
   }
 }
