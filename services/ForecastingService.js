@@ -53,15 +53,8 @@ var ForecastingService = function (databaseService) {
     assert(_.contains(_.functions(model), 'forecastDemand'),
       'Model must have function forecastDemand()');
 
-    // define any default options here
-    // this means that if the user does not pass in any options in the 
-    // options parameter, we can set defaults for them
-    var defaultOptions = {
-      numWeeks: 1
-    };
-
     // set the default options if not passed in by the user
-    _.defaults(options, defaultOptions);
+    _.defaults(options, {});
 
     // get the products 
     this.getProducts(function (err, products) {
@@ -72,7 +65,7 @@ var ForecastingService = function (databaseService) {
       
       for (var i = 0; i < products.length; i++) {
         var product = products[i];
-        var demand = model.forecastDemand(product);
+        var demand = model.forecastDemand(product, options);
 
         // store the forecasted sale amount in the product
         product.addForecastedSale(demand);

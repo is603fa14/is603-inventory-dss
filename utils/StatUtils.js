@@ -31,7 +31,7 @@ StatUtils.variance = function (arr, options) {
 	varianceSum = _.reduce(arr, function (memo, num) {
       var diff = num - options.avg;
       return memo + Math.pow(diff, 2);
-    });
+    }, 0);
 
     return varianceSum / arr.length;
 };

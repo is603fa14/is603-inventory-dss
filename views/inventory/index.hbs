@@ -7,7 +7,7 @@
     </p>
     <div class="row">
       <div class="col-sm-6">
-        <form action="/inventory/nextWeek" method="GET" class="form-inline">
+        <form action="/inventory/nextWeek" method="GET" class="">
             <div class="form-group required">
               <label for="select-model">Model</label>
               <select class="form-control" name="model" id="select-model" required
@@ -19,8 +19,23 @@
                 </option>
                 {{/each}}
               </select>
-              <small id="select-model-help" class="help-block sr-only">
-                Select a model to forecast next week's demand
+              <small id="select-model-help" class="help-block">
+                Select a model to forecast future demand
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="select-weeks">Number of Weeks Back</label>
+              <select class="form-control" name="weeks" id="select-weeks" 
+                describedby="select-weeks-help">
+                {{#each weeks}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-weeks-help" class="help-block">
+                Specify how many weeks back to go in order to forecast next 
+                week's demand.
               </small>
             </div>
             <button class="btn btn-primary" type="submit">Show</button> 
@@ -37,6 +52,7 @@
         </div>
         <script type="text/javascript">
         $(document).ready(function () {
+          // show the model descriptions as the selected options changes
           var toggle = function (modelName) {
             var selector = '.model-description-' + modelName;
             var matched = $(selector);
@@ -57,6 +73,34 @@
           });
 
           toggle($('#select-model').val());
+
+          // render a slider for the numweeks selection
+          var numWeeksSelect = $('#select-weeks');
+          var minWeeks = 1;
+          var maxWeeks = numWeeksSelect.find('option').length;
+          var curValue = numWeeksSelect[0].selectedIndex + 1;
+          var numWeeksMessage = $("<p><span id='num-weeks-message'>" +
+            curValue + "</span>&nbsp;weeks</p>");
+          var numWeeksSlider = $("<div id='slider-weeks'></div>")
+            .insertAfter(numWeeksSelect)
+            .slider({
+              min: minWeeks,
+              max: maxWeeks,
+              range: 'min',
+              value: curValue,
+              slide: function (event, ui) {
+                numWeeksSelect[0].selectedIndex = ui.value - 1;
+                numWeeksMessage.find('#num-weeks-message').html(ui.value);
+              }
+            });
+
+          numWeeksMessage.insertBefore(numWeeksSlider);
+
+          numWeeksSelect.change(function () {
+            numWeeksSlider.slider('value', this.selectedIndex + 1);
+          });
+
+          numWeeksSelect.hide();
         });
         </script>
       </div>

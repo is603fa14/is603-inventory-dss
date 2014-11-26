@@ -8,14 +8,14 @@ var LinearRegForecastingModel = function () {
   // super constructor call 
   BaseForecastingModel.call(this);
 
-  this.getForecastedQuantity = function (forProduct) {
-    var salesArr = this.getWeeklySalesArr(forProduct);
-    var bestFit = StatUtils.bestFit(salesArr);
-    var value = bestFit.f(salesArr.length + 1);
+  this.getForecastedQuantity = function (weeks, product, options) {
+    var bestFit = StatUtils.bestFit(weeks);
+    var value = bestFit.f(weeks.length + 1);
 
     var result = {
       value: Math.ceil(value),
-      debug: {
+      debug: {   
+        numWeeks: weeks.length,
         bestFit: bestFit,
         raw: value
       }

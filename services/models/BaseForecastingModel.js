@@ -20,11 +20,11 @@ var BaseForecastingModel = function () {
     }
 
     _.defaults(options, {
-      numWeeks: undefined
+      weeksBack: undefined
     });
 
-    if (options.numWeeks && options.numWeeks < salesArr.length) {
-      salesArr = _.first(salesArr, options.numWeeks);
+    if (options.weeksBack && options.weeksBack < salesArr.length) {
+      salesArr = _.first(salesArr, options.weeksBack);
     }
 
     for (var i = 0; i < salesArr.length; i++) {
@@ -37,10 +37,11 @@ var BaseForecastingModel = function () {
     return salesArr;
   };
 
-  this.forecastDemand = function (forProduct) {
+  this.forecastDemand = function (forProduct, options) {
   	assert(forProduct instanceof Product, 'Unknown product model');
-   
-    var forecasted = this.getForecastedQuantity(forProduct);
+
+    var sales = this.getWeeklySalesArr(forProduct, options);
+    var forecasted = this.getForecastedQuantity(sales, forProduct, options);
 
     return new WeeklySale({
       quantity: forecasted.value,
