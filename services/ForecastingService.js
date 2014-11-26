@@ -64,13 +64,25 @@ var ForecastingService = function (databaseService) {
     _.defaults(options, defaultOptions);
 
     // get the products 
-    this.getProducts(function (products) {
+    this.getProducts(function (err, products) {
+      if (err) {
+        callback(err);
+        return;
+      }
+      
       for (var i = 0; i < products.length; i++) {
         var product = products[i];
         var demand = model.forecastDemand(product);
 
         // store the forecasted sale amount in the product
         product.addForecastedSale(demand);
+
+        if (!product.hasOwnProperty('debug')) {
+          product.debug = '';
+        }
+
+        product.debug += '\n' + demand.debug;
+        product.debug = product.debug.trim();
       }
 
       callback(null, products);

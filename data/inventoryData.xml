@@ -1,170 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products xmlns:xlsData="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd"
-           xmlns="http://is.umbc.edu/is603/inventory/productData inventoryData.xsd">
-	  <product type="candy" name="Snckrs 2pc KS 3.29z">
-      <retailPrice/>
+          xmlns="http://is.umbc.edu/is603/inventory/productData inventoryData.xsd">
+	  <product type="candy" name="Snickers (King Size)">
+      <description>Snckrs 2pc KS 3.29z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>36</inventory>
+      <week id="20" promo="true">
          <qty>27</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>26</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>9</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>54</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>44</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>49</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>52</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>28</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="9">
+      <week id="12">
          <qty>26</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="10">
+      <week id="11">
          <qty>21</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="11">
+      <week id="10">
          <qty>22</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="12">
+      <week id="9">
          <qty>23</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="13">
+      <week id="8">
          <qty>36</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="14">
+      <week id="7">
          <qty>17</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>22</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>24</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>26</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>23</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>26</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>21</qty>
          <mkavg>19</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Reese BigCup KS 2.8z">
-      <retailPrice/>
+	  <product type="candy" name="Reeses Big Cup (King Size)">
+      <description>Reese BigCup KS 2.8z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>25</inventory>
+      <week id="20" promo="true">
          <qty>20</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>23</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>18</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>10</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>22</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>20</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>24</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="8">
-         <qty>23</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="9">
-         <qty>21</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="10">
-         <qty>22</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="11">
-         <qty>20</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="12">
-         <qty>19</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
@@ -173,211 +152,205 @@
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="14">
+      <week id="12">
          <qty>21</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="15">
-         <qty>19</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="16">
+      <week id="11">
          <qty>22</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="17">
-         <qty>22</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="18">
-         <qty>19</qty>
-         <mkavg>6</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="19">
+      <week id="10">
          <qty>20</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
-      <week id="20">
+      <week id="9">
+         <qty>19</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="8">
+         <qty>23</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="7">
+         <qty>21</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="6">
+         <qty>19</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="5">
+         <qty>22</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="4">
+         <qty>22</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="3">
+         <qty>19</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="2">
+         <qty>20</qty>
+         <mkavg>6</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="1">
          <qty>18</qty>
          <mkavg>6</mkavg>
          <nos>94</nos>
       </week>
    </product>
-	  <product type="candy" name="Snickers Bar 1.86oz">
-      <retailPrice/>
+	  <product type="candy" name="Snickers">
+      <description>Snickers Bar 1.86oz</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>21</inventory>
+      <week id="20" promo="true">
          <qty>17</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>21</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>38</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>11</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>35</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>34</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>19</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>21</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="9">
-         <qty>18</qty>
-         <mkavg>13</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>19</qty>
-         <mkavg>13</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>17</qty>
-         <mkavg>13</mkavg>
-         <nos>95</nos>
-      </week>
       <week id="12">
          <qty>18</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="13">
+      <week id="11">
+         <qty>19</qty>
+         <mkavg>13</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
+         <qty>17</qty>
+         <mkavg>13</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="9">
+         <qty>18</qty>
+         <mkavg>13</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
          <qty>20</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="14">
+      <week id="7">
          <qty>22</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>25</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>19</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>18</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>20</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>17</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>19</qty>
          <mkavg>13</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Reese Sticks KS 3z">
-      <retailPrice/>
+	  <product type="candy" name="Reeses Sticks (King Size)">
+      <description>Reese Sticks KS 3z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>11</inventory>
+      <week id="20" promo="true">
          <qty>16</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>14</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>7</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>11</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>12</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="7">
-         <qty>12</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="8">
-         <qty>14</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="9">
-         <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="10">
-         <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="11">
-         <qty>16</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="12">
-         <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="13">
-         <qty>14</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
@@ -386,112 +359,94 @@
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="15">
-         <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="16">
-         <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="17">
-         <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="18">
-         <qty>16</qty>
-         <mkavg>8</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="19">
+      <week id="13">
          <qty>14</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
-      <week id="20">
+      <week id="12">
+         <qty>13</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="11">
+         <qty>15</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="10">
+         <qty>16</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="9">
+         <qty>15</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="8">
+         <qty>14</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="7">
+         <qty>12</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="6">
+         <qty>13</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="5">
+         <qty>15</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="4">
+         <qty>15</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="3">
+         <qty>16</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="2">
+         <qty>14</qty>
+         <mkavg>8</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="1">
          <qty>12</qty>
          <mkavg>8</mkavg>
          <nos>91</nos>
       </week>
    </product>
-	  <product type="candy" name="Kit Kat KS 3z">
-      <retailPrice/>
+	  <product type="candy" name="Kit Kat (King Size)">
+      <description>Kit Kat KS 3z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>15</inventory>
+      <week id="20">
          <qty>13</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>10</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>9</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="5">
-         <qty>12</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="6">
-         <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="7">
-         <qty>14</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="8">
-         <qty>15</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>16</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>12</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="12">
-         <qty>14</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="13">
-         <qty>14</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
-         <qty>13</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="15">
-         <qty>11</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
@@ -500,201 +455,215 @@
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
-         <qty>10</qty>
+      <week id="15">
+         <qty>13</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
-         <qty>8</qty>
+      <week id="14">
+         <qty>14</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="13">
+         <qty>15</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="12">
+         <qty>16</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="11">
+         <qty>13</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
          <qty>12</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="9">
+         <qty>14</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
+         <qty>14</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>13</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
+         <qty>11</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="5">
+         <qty>12</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="4">
+         <qty>10</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="3">
+         <qty>8</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="2">
+         <qty>12</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="1">
          <qty>14</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Reese PB CpKS 2.8z">
-      <retailPrice/>
+	  <product type="candy" name="Reeses Peanut Butter Cup (King Size)">
+      <description>Reese PB CpKS 2.8z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>20</inventory>
+      <week id="20" promo="true">
          <qty>12</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>18</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>14</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>41</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>40</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>45</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>54</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>15</qty>
-         <mkavg>24</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>18</qty>
-         <mkavg>24</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>19</qty>
-         <mkavg>24</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>18</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
       <week id="12">
-         <qty>15</qty>
+         <qty>18</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="13">
-         <qty>17</qty>
-         <mkavg>24</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
+      <week id="11">
          <qty>19</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="15">
+      <week id="10">
+         <qty>18</qty>
+         <mkavg>24</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="9">
+         <qty>15</qty>
+         <mkavg>24</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
+         <qty>17</qty>
+         <mkavg>24</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>19</qty>
+         <mkavg>24</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
          <qty>20</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>17</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>12</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>16</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>11</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>16</qty>
          <mkavg>24</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="M&amp;M Peanut KS 3.27z">
-      <retailPrice/>
+	  <product type="candy" name="Peanut M&amp;M's">
+      <description>M&amp;M Peanut KS 3.27z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>10</inventory>
+      <week id="20">
          <qty>11</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>15</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>12</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>6</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>10</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="6">
-         <qty>13</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="7">
-         <qty>8</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="8">
-         <qty>12</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>11</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>14</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>15</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="12">
-         <qty>12</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="13">
-         <qty>14</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
-         <qty>14</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
@@ -703,101 +672,103 @@
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="16">
-         <qty>15</qty>
+      <week id="14">
+         <qty>8</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="13">
          <qty>12</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
-         <qty>16</qty>
+      <week id="12">
+         <qty>11</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="11">
+         <qty>14</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
+         <qty>15</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="9">
+         <qty>12</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
+         <qty>14</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>14</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
          <qty>13</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="5">
+         <qty>15</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="4">
+         <qty>12</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="3">
+         <qty>16</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="2">
+         <qty>13</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="1">
          <qty>18</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Hrshy Almnd KS 3.27z">
-      <retailPrice/>
+	  <product type="candy" name="Hershey Almond">
+      <description>Hrshy Almnd KS 3.27z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>8</inventory>
+      <week id="20" promo="true">
          <qty>10</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>8</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>9</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>7</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="5">
-         <qty>9</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="6">
-         <qty>8</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="7">
-         <qty>9</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="8">
-         <qty>10</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="9">
-         <qty>11</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="10">
-         <qty>9</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="11">
-         <qty>8</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="12">
-         <qty>10</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="13">
-         <qty>9</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="14">
+      <week id="16">
          <qty>9</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
@@ -807,107 +778,99 @@
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="16">
+      <week id="14">
          <qty>9</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="17">
-         <qty>9</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="18">
+      <week id="13">
          <qty>10</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="19">
+      <week id="12">
+         <qty>11</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="11">
+         <qty>9</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="10">
          <qty>8</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="20">
+      <week id="9">
+         <qty>10</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="8">
+         <qty>9</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="7">
+         <qty>9</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="6">
+         <qty>8</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="5">
+         <qty>9</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="4">
+         <qty>9</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="3">
+         <qty>10</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="2">
+         <qty>8</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="1">
          <qty>7</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
    </product>
-	  <product type="candy" name="Kit Kat 1.5z">
-      <retailPrice/>
+	  <product type="candy" name="Kit Kat ">
+      <description>Kit Kat 1.5z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>9</inventory>
+      <week id="20">
          <qty>9</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>3</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>11</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="5">
-         <qty>8</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="6">
-         <qty>7</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="7">
-         <qty>9</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="8">
-         <qty>8</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>6</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>10</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>8</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="12">
-         <qty>5</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="13">
-         <qty>9</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
-         <qty>10</qty>
-         <mkavg>8</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="15">
-         <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
@@ -916,503 +879,543 @@
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="15">
+         <qty>7</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="14">
          <qty>9</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
+      <week id="13">
          <qty>8</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="12">
+         <qty>6</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="11">
+         <qty>10</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
+         <qty>8</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="9">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="8">
+         <qty>9</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>10</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
+         <qty>6</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="5">
+         <qty>8</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="4">
+         <qty>9</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="3">
+         <qty>8</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="2">
+         <qty>5</qty>
+         <mkavg>8</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="1">
          <qty>8</qty>
          <mkavg>8</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="M&amp;M Peanut KS 1.74z">
-      <retailPrice/>
+	  <product type="candy" name="Peanut M&amp;M's ">
+      <description>M&amp;M Peanut 1.74z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>24</inventory>
+      <week id="20">
          <qty>9</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>14</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>13</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>18</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>17</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="6">
-         <qty>16</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="7">
-         <qty>15</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="8">
-         <qty>14</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>16</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>15</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>13</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="12">
-         <qty>12</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="13">
-         <qty>11</qty>
-         <mkavg>11</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
-         <qty>14</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
       <week id="15">
-         <qty>17</qty>
+         <qty>16</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="16">
+      <week id="14">
          <qty>15</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
-         <qty>8</qty>
+      <week id="13">
+         <qty>14</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
-         <qty>12</qty>
+      <week id="12">
+         <qty>16</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="11">
+         <qty>15</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
          <qty>13</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="9">
+         <qty>12</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
+         <qty>11</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>14</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
+         <qty>17</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="5">
+         <qty>15</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="4">
+         <qty>8</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="3">
+         <qty>12</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="2">
+         <qty>13</qty>
+         <mkavg>11</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="1">
          <qty>18</qty>
          <mkavg>11</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Twix CrmlBr KS 3.02z">
-      <retailPrice/>
+	  <product type="candy" name="Twix Caramel (King Size)">
+      <description>Twix CrmlBr KS 3.02z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>5</inventory>
+      <week id="20">
          <qty>9</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>12</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>10</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>12</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>11</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="6">
-         <qty>13</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="7">
-         <qty>12</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="8">
-         <qty>12</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="9">
-         <qty>9</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="10">
-         <qty>12</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="11">
-         <qty>8</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="12">
-         <qty>12</qty>
-         <mkavg>9</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="13">
+      <week id="15">
          <qty>13</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
       <week id="14">
+         <qty>12</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="13">
+         <qty>12</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="12">
+         <qty>9</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="11">
+         <qty>12</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="10">
+         <qty>8</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="9">
+         <qty>12</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="8">
+         <qty>13</qty>
+         <mkavg>9</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="7">
          <qty>10</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>11</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>12</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>9</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>10</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>8</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>13</qty>
          <mkavg>9</mkavg>
          <nos>94</nos>
       </week>
    </product>
-	  <product type="candy" name="3 Musketeersbr 1.92z">
-      <retailPrice/>
+	  <product type="candy" name="3 Musketeers">
+      <description>3 Musketeersbr 1.92z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>11</inventory>
+      <week id="20" promo="true">
          <qty>8</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>9</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>5</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>1</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>9</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>8</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>6</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>9</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="9">
+      <week id="12">
          <qty>10</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="10">
-         <qty>8</qty>
-         <mkavg>2</mkavg>
-         <nos>55</nos>
-      </week>
       <week id="11">
          <qty>8</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="12">
-         <qty>9</qty>
-         <mkavg>2</mkavg>
-         <nos>55</nos>
-      </week>
-      <week id="13">
-         <qty>7</qty>
-         <mkavg>2</mkavg>
-         <nos>55</nos>
-      </week>
-      <week id="14">
-         <qty>9</qty>
-         <mkavg>2</mkavg>
-         <nos>55</nos>
-      </week>
-      <week id="15">
+      <week id="10">
          <qty>8</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="16">
+      <week id="9">
          <qty>9</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="17">
+      <week id="8">
+         <qty>7</qty>
+         <mkavg>2</mkavg>
+         <nos>55</nos>
+      </week>
+      <week id="7">
+         <qty>9</qty>
+         <mkavg>2</mkavg>
+         <nos>55</nos>
+      </week>
+      <week id="6">
+         <qty>8</qty>
+         <mkavg>2</mkavg>
+         <nos>55</nos>
+      </week>
+      <week id="5">
+         <qty>9</qty>
+         <mkavg>2</mkavg>
+         <nos>55</nos>
+      </week>
+      <week id="4">
          <qty>10</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>7</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>8</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>6</qty>
          <mkavg>2</mkavg>
          <nos>55</nos>
       </week>
    </product>
-	  <product type="candy" name="Fast Break KS 3.5z">
-      <retailPrice/>
+	  <product type="candy" name="Fast Break (King Size)">
+      <description>Fast Break KS 3.5z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>13</inventory>
+      <week id="20">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>4</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>4</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>7</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="9">
+      <week id="12">
          <qty>9</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="10">
+      <week id="11">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="11">
+      <week id="10">
          <qty>7</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="12">
+      <week id="9">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="13">
+      <week id="8">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="14">
+      <week id="7">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>7</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>9</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>8</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>4</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>5</qty>
          <mkavg>4</mkavg>
          <nos>74</nos>
       </week>
    </product>
-	  <product type="candy" name="Hrshy CkyNCrm 1.55z">
-      <retailPrice/>
+	  <product type="candy" name="Hershey Cookies N' Cream">
+      <description>Hrshy CkyNCrm 1.55z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>8</inventory>
+      <week id="20">
          <qty>7</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>3</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>7</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>2</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>4</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>5</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="8">
-         <qty>7</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="9">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="10">
-         <qty>4</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="11">
-         <qty>2</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="12">
-         <qty>5</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
@@ -1421,279 +1424,345 @@
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="14">
+      <week id="12">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="11">
          <qty>4</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="15">
-         <qty>6</qty>
+      <week id="10">
+         <qty>2</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="16">
-         <qty>3</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="17">
+      <week id="9">
          <qty>5</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="18">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>89</nos>
-      </week>
-      <week id="19">
+      <week id="8">
          <qty>7</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
-      <week id="20">
+      <week id="7">
+         <qty>4</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="6">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="5">
+         <qty>3</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="4">
+         <qty>5</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="3">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="2">
+         <qty>7</qty>
+         <mkavg>6</mkavg>
+         <nos>89</nos>
+      </week>
+      <week id="1">
          <qty>4</qty>
          <mkavg>6</mkavg>
          <nos>89</nos>
       </week>
    </product>
-	  <product type="candy" name="Milky Way KS 3.63z">
-      <retailPrice/>
+	  <product type="candy" name="Milky Way (King Size)">
+      <description>Milky Way KS 3.63z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>9</inventory>
+      <week id="20">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>8</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>8</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>9</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="7">
-         <qty>8</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="8">
-         <qty>8</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="9">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="11">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="12">
-         <qty>8</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="13">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
       <week id="14">
          <qty>8</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="15">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="16">
+      <week id="13">
          <qty>8</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="17">
+      <week id="12">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="18">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>82</nos>
-      </week>
-      <week id="19">
+      <week id="11">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
-      <week id="20">
+      <week id="10">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="9">
+         <qty>8</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="8">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="7">
+         <qty>8</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="6">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="5">
+         <qty>8</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="4">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="3">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="2">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>82</nos>
+      </week>
+      <week id="1">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>82</nos>
       </week>
    </product>
-	  <product type="candy" name="Reese PB Cp 1.5z">
-      <retailPrice/>
+	  <product type="candy" name="Reeses Peanut Butter Cup">
+      <description>Reese PB Cp 1.5z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>10</inventory>
+      <week id="20" promo="true">
          <qty>7</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>3</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="4">
+      <week id="17" promo="true">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>6</qty>
-         <mkavg>8</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="8">
-         <qty>7</qty>
-         <mkavg>8</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="9">
-         <qty>5</qty>
-         <mkavg>8</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>8</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="11">
-         <qty>4</qty>
-         <mkavg>8</mkavg>
-         <nos>94</nos>
-      </week>
-      <week id="12">
-         <qty>7</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
       <week id="13">
+         <qty>7</qty>
+         <mkavg>8</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="12">
+         <qty>5</qty>
+         <mkavg>8</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="11">
+         <qty>6</qty>
+         <mkavg>8</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="10">
+         <qty>4</qty>
+         <mkavg>8</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="9">
+         <qty>7</qty>
+         <mkavg>8</mkavg>
+         <nos>94</nos>
+      </week>
+      <week id="8">
          <qty>3</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="14">
+      <week id="7">
          <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>7</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>4</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>5</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>6</qty>
          <mkavg>8</mkavg>
          <nos>94</nos>
       </week>
    </product>
-	  <product type="candy" name="Ferrero Rochr3pc 1.3z">
-      <retailPrice/>
+	  <product type="candy" name="Ferrero Rochr">
+      <description>Ferrero Rochr3pc 1.3z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>9</inventory>
+      <week id="20">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="6">
+      <week id="15">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="14">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="13">
+         <qty>8</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="12">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="11">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="10">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="9">
+         <qty>7</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="8">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
@@ -1703,81 +1772,123 @@
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="8">
-         <qty>8</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="9">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="10">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="11">
+      <week id="6">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="12">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="13">
+      <week id="5">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="14">
+      <week id="4">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>56</nos>
+      </week>
+      <week id="3">
          <qty>7</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="15">
+      <week id="2">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
-      <week id="16">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="17">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="18">
-         <qty>7</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="19">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>56</nos>
-      </week>
-      <week id="20">
+      <week id="1">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>56</nos>
       </week>
    </product>
-	  <product type="candy" name="Hrshy's Cks&amp;CrmKS 2.6z">
-      <retailPrice/>
+	  <product type="candy" name="Hershey Cookies N' Cream (King Size)">
+      <description>Hrshy's Cks&amp;CrmKS 2.6z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>17</inventory>
+      <week id="20" promo="true">
          <qty>6</qty>
          <mkavg>6</mkavg>
          <nos>91</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="18" promo="true">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="17" promo="true">
+         <qty>4</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="16">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="15">
+         <qty>7</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="14">
+         <qty>5</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="13">
+         <qty>7</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="12">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="11">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="10">
+         <qty>5</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="9">
+         <qty>7</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="8">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="7">
+         <qty>6</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="6">
+         <qty>5</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="5">
+         <qty>4</qty>
+         <mkavg>6</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="4">
          <qty>6</qty>
          <mkavg>6</mkavg>
          <nos>91</nos>
@@ -1787,385 +1898,241 @@
          <mkavg>6</mkavg>
          <nos>91</nos>
       </week>
-      <week id="4">
-         <qty>4</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="5">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="6">
-         <qty>7</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="7">
+      <week id="2">
          <qty>5</qty>
          <mkavg>6</mkavg>
          <nos>91</nos>
       </week>
-      <week id="8">
-         <qty>7</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="9">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="11">
-         <qty>5</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="12">
-         <qty>7</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="13">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="14">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="15">
-         <qty>5</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="16">
-         <qty>4</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="17">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="18">
-         <qty>6</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="19">
-         <qty>5</qty>
-         <mkavg>6</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="20">
+      <week id="1">
          <qty>5</qty>
          <mkavg>6</mkavg>
          <nos>91</nos>
       </week>
    </product>
-	  <product type="candy" name="M&amp;M PenBut KS 2.83z">
-      <retailPrice/>
+	  <product type="candy" name="Peanut Butter M&amp;M's (King Size)">
+      <description>M&amp;M PenBut KS 2.83z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>5</inventory>
+      <week id="20">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>78</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>4</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="18">
+         <qty>7</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="17">
+         <qty>4</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="16">
+         <qty>6</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="15">
+         <qty>6</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="14">
+         <qty>8</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="13">
+         <qty>4</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="12">
+         <qty>7</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="11">
+         <qty>7</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="10">
+         <qty>5</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="9">
+         <qty>6</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="8">
+         <qty>8</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="7">
+         <qty>5</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="6">
+         <qty>6</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="5">
+         <qty>4</qty>
+         <mkavg>4</mkavg>
+         <nos>78</nos>
+      </week>
+      <week id="4">
+         <qty>7</qty>
          <mkavg>4</mkavg>
          <nos>78</nos>
       </week>
       <week id="3">
-         <qty>7</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="4">
-         <qty>4</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="5">
-         <qty>6</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="6">
-         <qty>6</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="7">
-         <qty>8</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="8">
-         <qty>4</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="9">
-         <qty>7</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="10">
-         <qty>7</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="11">
          <qty>5</qty>
          <mkavg>4</mkavg>
          <nos>78</nos>
       </week>
-      <week id="12">
-         <qty>6</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="13">
-         <qty>8</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="14">
-         <qty>5</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="15">
-         <qty>6</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="16">
-         <qty>4</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="17">
+      <week id="2">
          <qty>7</qty>
          <mkavg>4</mkavg>
          <nos>78</nos>
       </week>
-      <week id="18">
-         <qty>5</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="19">
-         <qty>7</qty>
-         <mkavg>4</mkavg>
-         <nos>78</nos>
-      </week>
-      <week id="20">
+      <week id="1">
          <qty>6</qty>
          <mkavg>4</mkavg>
          <nos>78</nos>
       </week>
    </product>
-	  <product type="candy" name="Twix PB KS 2.8z">
-      <retailPrice/>
+	  <product type="candy" name="Twix Peanut Butter (King Size)">
+      <description>Twix PB KS 2.8z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>17</inventory>
+      <week id="20">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>2</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>1</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>4</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="7">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="8">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="9">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="11">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="12">
+      <week id="14">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
       <week id="13">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="14">
-         <qty>4</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="15">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="16">
-         <qty>2</qty>
-         <mkavg>3</mkavg>
-         <nos>61</nos>
-      </week>
-      <week id="17">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="18">
+      <week id="12">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="19">
+      <week id="11">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="10">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="9">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="8">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="7">
+         <qty>4</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="6">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="5">
+         <qty>2</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="4">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="3">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>61</nos>
+      </week>
+      <week id="2">
          <qty>3</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>61</nos>
       </week>
    </product>
-	  <product type="candy" name="Demet TurtlesBar 1.7z">
-      <retailPrice/>
+	  <product type="candy" name="Turtles Bar">
+      <description>Demet TurtlesBar 1.7z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>8</inventory>
+      <week id="20">
          <qty>5</qty>
          <mkavg>5</mkavg>
          <nos>42</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>4</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="3">
-         <qty>3</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="4">
-         <qty>2</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="5">
-         <qty>4</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="6">
-         <qty>5</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="7">
-         <qty>5</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="8">
-         <qty>7</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="9">
-         <qty>5</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="10">
-         <qty>2</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="11">
-         <qty>4</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="12">
-         <qty>5</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="13">
-         <qty>4</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="14">
-         <qty>5</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="15">
-         <qty>3</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="16">
-         <qty>4</qty>
-         <mkavg>5</mkavg>
-         <nos>42</nos>
-      </week>
-      <week id="17">
-         <qty>5</qty>
          <mkavg>5</mkavg>
          <nos>42</nos>
       </week>
@@ -2174,191 +2141,225 @@
          <mkavg>5</mkavg>
          <nos>42</nos>
       </week>
-      <week id="19">
+      <week id="17">
+         <qty>2</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="16">
+         <qty>4</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="15">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="14">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="13">
+         <qty>7</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="12">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="11">
+         <qty>2</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="10">
+         <qty>4</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="9">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="8">
+         <qty>4</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="7">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="6">
          <qty>3</qty>
          <mkavg>5</mkavg>
          <nos>42</nos>
       </week>
-      <week id="20">
+      <week id="5">
+         <qty>4</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="4">
+         <qty>5</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="3">
+         <qty>3</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="2">
+         <qty>3</qty>
+         <mkavg>5</mkavg>
+         <nos>42</nos>
+      </week>
+      <week id="1">
          <qty>4</qty>
          <mkavg>5</mkavg>
          <nos>42</nos>
       </week>
    </product>
-	  <product type="candy" name="Hrshy MlkChc KS 2.6z">
-      <retailPrice/>
+	  <product type="candy" name="Hershey Milk Chocolate (King Size)">
+      <description>Hrshy MlkChc KS 2.6z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>18</inventory>
+      <week id="20" promo="true">
          <qty>5</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="2">
+      <week id="19" promo="true">
          <qty>7</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="3">
+      <week id="18" promo="true">
          <qty>5</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="4">
-         <qty>9</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="5">
-         <qty>8</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="6">
-         <qty>7</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="7">
-         <qty>7</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="8">
-         <qty>8</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="9">
-         <qty>7</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="11">
-         <qty>8</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="12">
-         <qty>8</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="13">
-         <qty>6</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="14">
-         <qty>8</qty>
-         <mkavg>5</mkavg>
-         <nos>95</nos>
-      </week>
-      <week id="15">
+      <week id="17" promo="true">
          <qty>9</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
       <week id="16">
+         <qty>8</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="15">
          <qty>7</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="17">
+      <week id="14">
+         <qty>7</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="13">
+         <qty>8</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="12">
+         <qty>7</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="11">
+         <qty>6</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="10">
+         <qty>8</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="9">
+         <qty>8</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="8">
+         <qty>6</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="7">
+         <qty>8</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="6">
+         <qty>9</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="5">
+         <qty>7</qty>
+         <mkavg>5</mkavg>
+         <nos>95</nos>
+      </week>
+      <week id="4">
          <qty>5</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>7</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>7</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>3</qty>
          <mkavg>5</mkavg>
          <nos>95</nos>
       </week>
    </product>
-	  <product type="candy" name="Take 5 King Sz 2.25z">
-      <retailPrice/>
+	  <product type="candy" name="Take 5 (King Size)">
+      <description>Take 5 King Sz 2.25z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>15</inventory>
+      <week id="20">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>2</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>4</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="6">
-         <qty>4</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="7">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="8">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="9">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="10">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="11">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="12">
-         <qty>6</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="13">
-         <qty>5</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="14">
-         <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
@@ -2367,121 +2368,83 @@
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="16">
-         <qty>4</qty>
-         <mkavg>3</mkavg>
-         <nos>44</nos>
-      </week>
-      <week id="17">
+      <week id="14">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="18">
+      <week id="13">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="12">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="11">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="10">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="9">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="8">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="7">
+         <qty>6</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="6">
+         <qty>4</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="5">
+         <qty>4</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="4">
+         <qty>5</qty>
+         <mkavg>3</mkavg>
+         <nos>44</nos>
+      </week>
+      <week id="3">
          <qty>3</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>5</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>6</qty>
          <mkavg>3</mkavg>
          <nos>44</nos>
       </week>
    </product>
-	  <product type="candy" name="M&amp;M Choc Bar 1.5z">
-      <retailPrice/>
+	  <product type="candy" name="M&amp;M Chocolate Bar">
+      <description>M&amp;M Choc Bar 1.5z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="2">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="3">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="4">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="5">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="6">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="7">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="8">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="9">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="10">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="11">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="12">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="13">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="14">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="15">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="16">
-         <qty>1</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="17">
-         <qty>0</qty>
-         <mkavg>3</mkavg>
-         <nos>19</nos>
-      </week>
-      <week id="18">
+      <inventory>5</inventory>
+      <week id="20">
          <qty>1</qty>
          <mkavg>3</mkavg>
          <nos>19</nos>
@@ -2491,96 +2454,108 @@
          <mkavg>3</mkavg>
          <nos>19</nos>
       </week>
-      <week id="20">
+      <week id="18">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="17">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="16">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="15">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="14">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="13">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="12">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="11">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="10">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="9">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="8">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="7">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="6">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="5">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="4">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="3">
+         <qty>1</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="2">
+         <qty>0</qty>
+         <mkavg>3</mkavg>
+         <nos>19</nos>
+      </week>
+      <week id="1">
          <qty>0</qty>
          <mkavg>3</mkavg>
          <nos>19</nos>
       </week>
    </product>
-	  <product type="candy" name="Nestle Chunk Ks 2.5z">
-      <retailPrice/>
+	  <product type="candy" name="Nestle Chunk (King Size)">
+      <description>Nestle Chunk Ks 2.5z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>8</inventory>
+      <week id="20">
          <qty>1</qty>
          <mkavg>5</mkavg>
          <nos>38</nos>
       </week>
-      <week id="2">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="3">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="4">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="5">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="6">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="7">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="8">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="9">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="10">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="11">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="12">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="13">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="14">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="15">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="16">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>38</nos>
-      </week>
-      <week id="17">
+      <week id="19">
          <qty>0</qty>
          <mkavg>5</mkavg>
          <nos>38</nos>
@@ -2590,101 +2565,103 @@
          <mkavg>5</mkavg>
          <nos>38</nos>
       </week>
-      <week id="19">
+      <week id="17">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="16">
          <qty>1</qty>
          <mkavg>5</mkavg>
          <nos>38</nos>
       </week>
-      <week id="20">
+      <week id="15">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="14">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="13">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="12">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="11">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="10">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="9">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="8">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="7">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="6">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="5">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="4">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="3">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="2">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>38</nos>
+      </week>
+      <week id="1">
          <qty>0</qty>
          <mkavg>5</mkavg>
          <nos>38</nos>
       </week>
    </product>
-	  <product type="candy" name="Kit Kat Mini KS 2.2z">
-      <retailPrice/>
+	  <product type="candy" name="Kit Kat Mini (King Size)">
+      <description>Kit Kat Mini KS 2.2z</description>
+      <retailPrice>1.99</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>9</inventory>
+      <week id="20">
          <qty>0</qty>
          <mkavg>5</mkavg>
          <nos>71</nos>
       </week>
-      <week id="2">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="3">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="4">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="5">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="6">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="7">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="8">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="9">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="10">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="11">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="12">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="13">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="14">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="15">
-         <qty>1</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="16">
-         <qty>0</qty>
-         <mkavg>5</mkavg>
-         <nos>71</nos>
-      </week>
-      <week id="17">
+      <week id="19">
          <qty>0</qty>
          <mkavg>5</mkavg>
          <nos>71</nos>
@@ -2694,116 +2671,193 @@
          <mkavg>5</mkavg>
          <nos>71</nos>
       </week>
-      <week id="19">
+      <week id="17">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="16">
          <qty>0</qty>
          <mkavg>5</mkavg>
          <nos>71</nos>
       </week>
-      <week id="20">
+      <week id="15">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="14">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="13">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="12">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="11">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="10">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="9">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="8">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="7">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="6">
+         <qty>1</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="5">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="4">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="3">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="2">
+         <qty>0</qty>
+         <mkavg>5</mkavg>
+         <nos>71</nos>
+      </week>
+      <week id="1">
          <qty>1</qty>
          <mkavg>5</mkavg>
          <nos>71</nos>
       </week>
    </product>
-	  <product type="candy" name="Twix Caramel 1.79z">
-      <retailPrice/>
+	  <product type="candy" name="Twix Caramel">
+      <description>Twix Caramel 1.79z</description>
+      <retailPrice>1.39</retailPrice>
       <margin/>
-      <week id="1">
+      <inventory>12</inventory>
+      <week id="20">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="2">
+      <week id="19">
          <qty>1</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="3">
+      <week id="18">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="4">
+      <week id="17">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="5">
+      <week id="16">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="6">
+      <week id="15">
          <qty>1</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="7">
+      <week id="14">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="8">
+      <week id="13">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="9">
-         <qty>0</qty>
-         <mkavg>7</mkavg>
-         <nos>91</nos>
-      </week>
-      <week id="10">
+      <week id="12">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
       <week id="11">
+         <qty>0</qty>
+         <mkavg>7</mkavg>
+         <nos>91</nos>
+      </week>
+      <week id="10">
          <qty>2</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="12">
+      <week id="9">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="13">
+      <week id="8">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="14">
+      <week id="7">
          <qty>1</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="15">
+      <week id="6">
          <qty>2</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="16">
+      <week id="5">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="17">
+      <week id="4">
          <qty>1</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="18">
+      <week id="3">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="19">
+      <week id="2">
          <qty>1</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>
       </week>
-      <week id="20">
+      <week id="1">
          <qty>0</qty>
          <mkavg>7</mkavg>
          <nos>91</nos>

@@ -1,82 +1,31 @@
 var util = require('util'); // include a system module (util: http://nodejs.org/api/util.html)
 var _ = require('underscore');
 var BaseForecastingModel = require('./BaseForecastingModel'); // include the base classs
+var StatUtils = require('../../utils/StatUtils');
 
 // class definition
 var SimpleForecastingModel = function () {
   // super constructor call 
   BaseForecastingModel.call(this);
 
-  this.getWeeklySalesArr = function (product, options) {
-    if (!_.isArray(product.weeklySales)) {
-      return [];
-    }
-
-    var salesArr = _.pluck(product.weeklySales, 'quantity');
-
-    if (!options) {
-      options = {};
-    }
-
-    _.defaults(options, {
-      numWeeks: undefined
-    });
-
-    if (options.numWeeks && options.numWeeks < salesArr.length) {
-      salesArr = _.first(salesArr, options.numWeeks);
-    }
-
-    for (var i = 0; i < salesArr.length; i++) {
-      var val = salesArr[i];
-      if (!_.isNumber(val)) {
-        salesArr[i] = parseFloat(val);
-      }
-    }
-
-    return salesArr;
-  };
-
-  this.calculateAverage = function (salesArr) {
-    if (!_.isArray(salesArr)) {
-      return;
-    }
-
-    var sum = _.reduce(salesArr, function (memo, num) {
-      return memo + num;
-    });
-
-    return sum / salesArr.length;
-  };
-
-  this.calculateVariance = function (salesArr, avg) {
-    if (!_.isArray(salesArr) || !_.isNumber(avg)) {
-      return;
-    }
-
-    var varianceSum = _.reduce(salesArr, function (memo, num) {
-      var diff = num - avg;
-      return memo + Math.pow(diff, 2);
-    });
-
-    return varianceSum / salesArr.length;
-  };
-
-  this.calculateStdDeviation = function (salesArr, avg) {
-    if (!_.isArray(salesArr) || !_.isNumber(avg)) {
-      return;
-    }
-
-    var variance = this.calculateVariance(salesArr, avg);
-
-    return Math.sqrt(variance);
-  };
-
   this.getForecastedQuantity = function (forProduct) {
     var salesArr = this.getWeeklySalesArr(forProduct);
-    var average = this.calculateAverage(salesArr);
-    var stdDeviation = this.calculateStdDeviation(salesArr, average);
+    var average = StatUtils.mean(salesArr);
+    var stdDeviation = StatUtils.stdDeviation(salesArr, {avg: average});
+    var trend = 1;
+    var value = average + (trend * stdDeviation);
+
+    var result = {
+      value: Math.ceil(value),
+      debug: {
+        average: average,
+        stdDeviation: stdDeviation,
+        trend: trend,
+        raw: value
+      }
+    };
     
-    return Math.ceil(average + stdDeviation);
+    return result;
   };
 };
 
