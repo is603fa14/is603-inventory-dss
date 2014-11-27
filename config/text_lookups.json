@@ -11,6 +11,10 @@
     "tDistribution": {
       "name": "T-distribution",
       "description": "Uses a T-distribution to determine the upper limit of next week's demand, within a specified confidence interval."
+    },
+    "avgWithPromo": {
+      "name": "Average with Promotional Consideration",
+      "description": "Use the average to determine the future demand, but inflate the average if there was a promotion involved.  If there was a promotion last week, then continue the promotion into this week."
     }
   }
 }

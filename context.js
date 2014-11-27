@@ -6,6 +6,7 @@ var RecommenderService = require('./services/RecommenderService');
 var SimpleForecastingModel = require('./services/models/SimpleForecastingModel');
 var LinearRegForecastingModel = require('./services/models/LinearRegForecastingModel');
 var TDistributionModel = require('./services/models/TDistributionModel');
+var AverageWithPromotionModel = require('./services/models/AverageWithPromotionModel');
 var SimpleRecommender = require('./services/recommenders/SimpleRecommender');
 
 var Context = function () {
@@ -18,6 +19,7 @@ var Context = function () {
 	this.forecastingService.addModel('simple', new SimpleForecastingModel());
 	this.forecastingService.addModel('linearRegression', new LinearRegForecastingModel());
   this.forecastingService.addModel('tDistribution', new TDistributionModel());
+  this.forecastingService.addModel('avgWithPromo', new AverageWithPromotionModel());
 
   // tools for generating recommendations
   this.replacementDataService = new XmlService(path.join(__dirname, 'data/replacementData.xml'));

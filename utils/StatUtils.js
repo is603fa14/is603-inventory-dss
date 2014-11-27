@@ -196,4 +196,12 @@ StatUtils.getUpperTLimit = function (arr, options) {
   }
 };
 
+StatUtils.max = function (arr) {
+  if (!_.isArray(arr)) {
+    return;
+  }
+
+  return (!_.isEmpty(arr)) ? _.max(arr) : 0;
+}
+
 module.exports = StatUtils;
