@@ -14,6 +14,10 @@ var getForecastingService = function (request) {
 	return getContext(request).forecastingService;
 };
 
+var getRecommenderService = function (request) {
+  return getContext(request).recommenderService;
+};
+
 var getModelSelections = function (models, curModel, textLookup) {
 	var options = [];
 
@@ -95,13 +99,25 @@ router.get('/nextWeek', function (req, res, next) {
 			return;
 		}
 
-		res.render('inventory/index', {
-			title: 'Forecasted Sales for Next Week',
-			products: products,
-			models: modelSelections,
-			weeks: weekSelections,
-			text: textLookups
-		});
+    var recommenderService = getRecommenderService(req);
+
+    recommenderService.makeRecommendation(
+      recommenderService.getRecommender('simple'), products, forecastingOptions,
+      function (err, products) {
+        if (err) {
+          next(err);
+          return;
+        }
+
+    		res.render('inventory/index', {
+    			title: 'Forecasted Sales for Next Week',
+    			products: products,
+    			models: modelSelections,
+    			weeks: weekSelections,
+    			text: textLookups
+    		});
+      }
+    );
 	});
 });
 

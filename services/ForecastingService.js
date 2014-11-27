@@ -53,7 +53,15 @@ var ForecastingService = function (databaseService) {
     assert(_.contains(_.functions(model), 'forecastDemand'),
       'Model must have function forecastDemand()');
 
+    if (!callback) {
+      callback = _.noop;
+    }
+
     // set the default options if not passed in by the user
+    if (!options) {
+      options = {};
+    }
+
     _.defaults(options, {});
 
     // get the products 

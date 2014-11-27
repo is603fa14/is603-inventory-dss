@@ -134,6 +134,53 @@
           {{/if}}
         </div>
         <div class="col-sm-8">
+          {{#if recommendation}}
+          <div class="recommendation">
+            {{#with recommendation}}
+            <h3>
+              Recommendation
+              {{#if replaceWith}}
+              <span class="label label-warning">Replace</span>
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#if orderQuantity.quantity}}
+              <span class="label label-success">Restock</span>
+              {{else}}
+              <span class="label label-info">No action</span>
+              {{/if}}
+              {{/if}}
+            </h3>
+            <div class="summary">
+              {{#if replaceWith}}
+              {{#with replaceWith}}
+              <p><strong>Replace with {{product.name}}.</strong></p>
+              {{/with}}
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#with orderQuantity}}
+              {{#if quantity}}
+              <p><strong>Order {{quantity}} more units.</strong></p>
+              {{else}}
+              <p><strong>Do nothing.</strong></p>
+              {{/if}}
+              {{/with}}
+              {{/if}}
+            </div>
+            <div class="justification">
+              {{#if replaceWith}}
+              {{#each replaceWith.justification}}
+              <p>{{.}}</p>
+              {{/each}}
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#each orderQuantity.justification}}
+              <p>{{.}}</p>
+              {{/each}}
+              {{/if}}
+            </div>
+            {{/with}}
+          </div>
+          {{/if}}
           <h3>Weekly Sales</h3>
           <div class="pre-scrollable">
             <table class="table table-striped sales">
