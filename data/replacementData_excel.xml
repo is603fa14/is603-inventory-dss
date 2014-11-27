@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inventory xmlns="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd">
+	<product>
+		<name>Snickers Mixed Nuts</name>
+		<description>Snickers Mixed Nuts 1.86z</description>
+		<retailPrice>1.39</retailPrice>
+		<marketAPS>15</marketAPS>
+		<numStores>79</numStores>
+		<currentPromotion/>
+	</product>
+	<product>
+		<name>Birthday Cake M&amp;M's</name>
+		<description>M&amp;M Brthday Cake 1.5z</description>
+		<retailPrice>1.39</retailPrice>
+		<marketAPS>12</marketAPS>
+		<numStores>67</numStores>
+		<currentPromotion/>
+	</product>
+	<product>
+		<name>Kind Protein Bar</name>
+		<description>Kind Protein Bar 1.8z</description>
+		<retailPrice>1.99</retailPrice>
+		<marketAPS>10</marketAPS>
+		<numStores>55</numStores>
+		<currentPromotion/>
+	</product>
+	<product>
+		<name>Peanut Butter Butterfinger (King Size)</name>
+		<description>Butterfinger PenBut KS 3.0Z</description>
+		<retailPrice>1.99</retailPrice>
+		<marketAPS>25</marketAPS>
+		<numStores>71</numStores>
+		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
+	</product>
+</inventory>

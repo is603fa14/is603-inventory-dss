@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <inventory xmlns="http://is.umbc.edu/is603/inventory/excelData inventoryData_excel.xsd">
 	<product>
+		<name>Snickers (King Size)</name>
 		<description>Snckrs 2pc KS 3.29z</description>
 		<minQuantity>15</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>36</inventory>
 		<week1>27</week1>
 		<week2>26</week2>
 		<week3>9</week3>
@@ -26,12 +29,15 @@
 		<salesTotal>576</salesTotal>
 		<marketAPS>19</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>28.8</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Reeses Big Cup (King Size)</name>
 		<description>Reese BigCup KS 2.8z</description>
 		<minQuantity>10</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>25</inventory>
 		<week1>20</week1>
 		<week2>23</week2>
 		<week3>18</week3>
@@ -55,12 +61,15 @@
 		<salesTotal>406</salesTotal>
 		<marketAPS>6</marketAPS>
 		<numStores>94</numStores>
-		<monthlySales/>
+		<weeklyAvg>20.3</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Snickers</name>
 		<description>Snickers Bar 1.86oz</description>
 		<minQuantity>12</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>21</inventory>
 		<week1>17</week1>
 		<week2>21</week2>
 		<week3>38</week3>
@@ -84,12 +93,15 @@
 		<salesTotal>428</salesTotal>
 		<marketAPS>13</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>21.4</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Reeses Sticks (King Size)</name>
 		<description>Reese Sticks KS 3z</description>
 		<minQuantity>10</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>11</inventory>
 		<week1>16</week1>
 		<week2>14</week2>
 		<week3>7</week3>
@@ -113,12 +125,15 @@
 		<salesTotal>271</salesTotal>
 		<marketAPS>8</marketAPS>
 		<numStores>91</numStores>
-		<monthlySales/>
+		<weeklyAvg>13.55</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Kit Kat (King Size)</name>
 		<description>Kit Kat KS 3z</description>
 		<minQuantity>12</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>15</inventory>
 		<week1>13</week1>
 		<week2>10</week2>
 		<week3>9</week3>
@@ -142,12 +157,15 @@
 		<salesTotal>248</salesTotal>
 		<marketAPS>8</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>12.4</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Reeses Peanut Butter Cup (King Size)</name>
 		<description>Reese PB CpKS 2.8z</description>
 		<minQuantity>10</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>20</inventory>
 		<week1>12</week1>
 		<week2>18</week2>
 		<week3>14</week3>
@@ -171,12 +189,15 @@
 		<salesTotal>437</salesTotal>
 		<marketAPS>24</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>21.85</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Peanut M&amp;M's</name>
 		<description>M&amp;M Peanut KS 3.27z</description>
 		<minQuantity>10</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>10</inventory>
 		<week1>11</week1>
 		<week2>15</week2>
 		<week3>12</week3>
@@ -200,12 +221,15 @@
 		<salesTotal>254</salesTotal>
 		<marketAPS>11</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>12.7</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Hershey Almond</name>
 		<description>Hrshy Almnd KS 3.27z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>8</inventory>
 		<week1>10</week1>
 		<week2>8</week2>
 		<week3>9</week3>
@@ -229,12 +253,15 @@
 		<salesTotal>177</salesTotal>
 		<marketAPS>7</marketAPS>
 		<numStores>91</numStores>
-		<monthlySales/>
+		<weeklyAvg>8.85</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Kit Kat </name>
 		<description>Kit Kat 1.5z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>9</inventory>
 		<week1>9</week1>
 		<week2>3</week2>
 		<week3>5</week3>
@@ -258,12 +285,15 @@
 		<salesTotal>152</salesTotal>
 		<marketAPS>8</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>7.6</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
-		<description>M&amp;M Peanut KS 1.74z</description>
+		<name>Peanut M&amp;M's </name>
+		<description>M&amp;M Peanut 1.74z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>24</inventory>
 		<week1>9</week1>
 		<week2>14</week2>
 		<week3>13</week3>
@@ -287,12 +317,15 @@
 		<salesTotal>280</salesTotal>
 		<marketAPS>11</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>14</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Twix Caramel (King Size)</name>
 		<description>Twix CrmlBr KS 3.02z</description>
 		<minQuantity>12</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>5</inventory>
 		<week1>9</week1>
 		<week2>12</week2>
 		<week3>10</week3>
@@ -316,12 +349,15 @@
 		<salesTotal>218</salesTotal>
 		<marketAPS>9</marketAPS>
 		<numStores>94</numStores>
-		<monthlySales/>
+		<weeklyAvg>10.9</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>3 Musketeers</name>
 		<description>3 Musketeersbr 1.92z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>11</inventory>
 		<week1>8</week1>
 		<week2>9</week2>
 		<week3>5</week3>
@@ -345,12 +381,15 @@
 		<salesTotal>154</salesTotal>
 		<marketAPS>2</marketAPS>
 		<numStores>55</numStores>
-		<monthlySales/>
+		<weeklyAvg>7.7</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Fast Break (King Size)</name>
 		<description>Fast Break KS 3.5z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>13</inventory>
 		<week1>8</week1>
 		<week2>6</week2>
 		<week3>4</week3>
@@ -374,12 +413,15 @@
 		<salesTotal>136</salesTotal>
 		<marketAPS>4</marketAPS>
 		<numStores>74</numStores>
-		<monthlySales/>
+		<weeklyAvg>6.8</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Hershey Cookies N' Cream</name>
 		<description>Hrshy CkyNCrm 1.55z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>8</inventory>
 		<week1>7</week1>
 		<week2>3</week2>
 		<week3>7</week3>
@@ -403,12 +445,15 @@
 		<salesTotal>100</salesTotal>
 		<marketAPS>6</marketAPS>
 		<numStores>89</numStores>
-		<monthlySales/>
+		<weeklyAvg>5</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Milky Way (King Size)</name>
 		<description>Milky Way KS 3.63z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>9</inventory>
 		<week1>7</week1>
 		<week2>7</week2>
 		<week3>7</week3>
@@ -432,12 +477,15 @@
 		<salesTotal>146</salesTotal>
 		<marketAPS>3</marketAPS>
 		<numStores>82</numStores>
-		<monthlySales/>
+		<weeklyAvg>7.3</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Reeses Peanut Butter Cup</name>
 		<description>Reese PB Cp 1.5z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>10</inventory>
 		<week1>7</week1>
 		<week2>5</week2>
 		<week3>3</week3>
@@ -461,12 +509,15 @@
 		<salesTotal>109</salesTotal>
 		<marketAPS>8</marketAPS>
 		<numStores>94</numStores>
-		<monthlySales/>
+		<weeklyAvg>5.45</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Ferrero Rochr</name>
 		<description>Ferrero Rochr3pc 1.3z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>9</inventory>
 		<week1>6</week1>
 		<week2>7</week2>
 		<week3>5</week3>
@@ -490,12 +541,15 @@
 		<salesTotal>125</salesTotal>
 		<marketAPS>3</marketAPS>
 		<numStores>56</numStores>
-		<monthlySales/>
+		<weeklyAvg>6.25</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Hershey Cookies N' Cream (King Size)</name>
 		<description>Hrshy's Cks&amp;CrmKS 2.6z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>17</inventory>
 		<week1>6</week1>
 		<week2>6</week2>
 		<week3>6</week3>
@@ -519,12 +573,15 @@
 		<salesTotal>114</salesTotal>
 		<marketAPS>6</marketAPS>
 		<numStores>91</numStores>
-		<monthlySales/>
+		<weeklyAvg>5.7</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Peanut Butter M&amp;M's (King Size)</name>
 		<description>M&amp;M PenBut KS 2.83z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>5</inventory>
 		<week1>6</week1>
 		<week2>4</week2>
 		<week3>7</week3>
@@ -548,12 +605,15 @@
 		<salesTotal>118</salesTotal>
 		<marketAPS>4</marketAPS>
 		<numStores>78</numStores>
-		<monthlySales/>
+		<weeklyAvg>5.9</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Twix Peanut Butter (King Size)</name>
 		<description>Twix PB KS 2.8z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>17</inventory>
 		<week1>6</week1>
 		<week2>5</week2>
 		<week3>2</week3>
@@ -577,12 +637,15 @@
 		<salesTotal>93</salesTotal>
 		<marketAPS>3</marketAPS>
 		<numStores>61</numStores>
-		<monthlySales/>
+		<weeklyAvg>4.65</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Turtles Bar</name>
 		<description>Demet TurtlesBar 1.7z</description>
 		<minQuantity>5</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>8</inventory>
 		<week1>5</week1>
 		<week2>4</week2>
 		<week3>3</week3>
@@ -606,12 +669,15 @@
 		<salesTotal>82</salesTotal>
 		<marketAPS>5</marketAPS>
 		<numStores>42</numStores>
-		<monthlySales/>
+		<weeklyAvg>4.1</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Hershey Milk Chocolate (King Size)</name>
 		<description>Hrshy MlkChc KS 2.6z</description>
 		<minQuantity>6</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>18</inventory>
 		<week1>5</week1>
 		<week2>7</week2>
 		<week3>5</week3>
@@ -635,12 +701,15 @@
 		<salesTotal>137</salesTotal>
 		<marketAPS>5</marketAPS>
 		<numStores>95</numStores>
-		<monthlySales/>
+		<weeklyAvg>6.85</weeklyAvg>
 		<currentPromotion>Buy 2 Get 1 Free</currentPromotion>
 	</product>
 	<product>
+		<name>Take 5 (King Size)</name>
 		<description>Take 5 King Sz 2.25z</description>
 		<minQuantity>4</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>15</inventory>
 		<week1>5</week1>
 		<week2>6</week2>
 		<week3>2</week3>
@@ -664,12 +733,15 @@
 		<salesTotal>98</salesTotal>
 		<marketAPS>3</marketAPS>
 		<numStores>44</numStores>
-		<monthlySales/>
+		<weeklyAvg>4.9</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>M&amp;M Chocolate Bar</name>
 		<description>M&amp;M Choc Bar 1.5z</description>
 		<minQuantity>1</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>5</inventory>
 		<week1>1</week1>
 		<week2>0</week2>
 		<week3>0</week3>
@@ -693,12 +765,15 @@
 		<salesTotal>8</salesTotal>
 		<marketAPS>3</marketAPS>
 		<numStores>19</numStores>
-		<monthlySales/>
+		<weeklyAvg>0.4</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Nestle Chunk (King Size)</name>
 		<description>Nestle Chunk Ks 2.5z</description>
 		<minQuantity>1</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>8</inventory>
 		<week1>1</week1>
 		<week2>0</week2>
 		<week3>0</week3>
@@ -722,12 +797,15 @@
 		<salesTotal>7</salesTotal>
 		<marketAPS>5</marketAPS>
 		<numStores>38</numStores>
-		<monthlySales/>
+		<weeklyAvg>0.35</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Kit Kat Mini (King Size)</name>
 		<description>Kit Kat Mini KS 2.2z</description>
 		<minQuantity>2</minQuantity>
+		<retailPrice>1.99</retailPrice>
+		<inventory>9</inventory>
 		<week1>0</week1>
 		<week2>0</week2>
 		<week3>0</week3>
@@ -751,12 +829,15 @@
 		<salesTotal>5</salesTotal>
 		<marketAPS>5</marketAPS>
 		<numStores>71</numStores>
-		<monthlySales/>
+		<weeklyAvg>0.25</weeklyAvg>
 		<currentPromotion/>
 	</product>
 	<product>
+		<name>Twix Caramel</name>
 		<description>Twix Caramel 1.79z</description>
 		<minQuantity>2</minQuantity>
+		<retailPrice>1.39</retailPrice>
+		<inventory>12</inventory>
 		<week1>0</week1>
 		<week2>1</week2>
 		<week3>0</week3>
@@ -780,7 +861,7 @@
 		<salesTotal>9</salesTotal>
 		<marketAPS>7</marketAPS>
 		<numStores>91</numStores>
-		<monthlySales/>
+		<weeklyAvg>0.45</weeklyAvg>
 		<currentPromotion/>
 	</product>
 </inventory>

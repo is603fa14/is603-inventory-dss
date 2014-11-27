@@ -3,8 +3,10 @@
   <head>
     <title>{{title}} | Inventory Support System</title>
     <link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+    <script type='text/javascript' src='https://code.jquery.com/ui/1.11.2/jquery-ui.min.js'></script>
     <script type='text/javascript' src='/bootstrap/js/bootstrap.js'></script>
   </head>
   <body>
@@ -26,6 +28,7 @@
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="nav navbar-nav">
               <li><a href="/inventory">Inventory</a></li>
+              <li><a href="/vendors">Vendor Products</a></li>
             </ul>
           </div>
         </nav>
@@ -38,5 +41,22 @@
         <p><small>For development only</small></p>
       </footer>
     </div>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      // use javascript to show which navbar item should be selected
+      // select if the first part of the current path matches the HREF
+      var curPath = window.location.pathname;
+      if (curPath) {
+        var pathParts = curPath.split('/');
+        if (pathParts.length > 1 && pathParts[1]) {
+          var matching = $('#main-navbar').find('a[href^="/' + pathParts[1] + '"]');
+          if (matching.length > 0) {
+            var wrapper = $(matching.parents('li').get(0));
+            wrapper.addClass('active');
+          }
+        }
+      }
+    });
+    </script>
   </body>
 </html>

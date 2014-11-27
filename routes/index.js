@@ -20,7 +20,7 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/sample', function (req, res) {
+router.get('/sample', function (req, res, next) {
   // specify the XML file to use
   var xmlPath = path.join(__dirname, '../data/inventoryData.xml');
   console.log(xmlPath);
@@ -31,7 +31,12 @@ router.get('/sample', function (req, res) {
   //var model = new SimpleForecastingModel();
 
   //res.send(forecastingService.forecastOrders(model));
-  dataService.getProducts(function(result) {
+  dataService.getProducts(function(err, result) {
+    if (err) {
+      next(err);
+      return;
+    }
+
     res.send(result);
   });           
 });

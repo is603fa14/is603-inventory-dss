@@ -6,9 +6,14 @@ var Product = function (values) {
   _.defaults(values, {
     type: null,
     name: null,
+    description: null,
     retailPrice: null,
     margin: null,
-    weeklySales: []
+    inventory: null,
+    weeklySales: [],
+    marketAverage: null,
+    numStores: null,
+    recommendation: null
   });
   _.extend(this, values);
 
