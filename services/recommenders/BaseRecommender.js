@@ -18,7 +18,7 @@ var BaseRecommender = function () {
     options.previousWeeks = this.getPreviousWeeks(product);
     options.forecastedWeeks = this.getForecastedWeeks(product);
     options.thisWeek = options.previousWeeks[0];
-    options.nextWeek = options.forecastedWeeks[0];
+    options.nextWeek = options.forecastedWeeks[options.forecastedWeeks.length - 1];
 
     recommendation.replaceWith = this.getReplacement(product, replacements,
       options);

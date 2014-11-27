@@ -32,9 +32,9 @@ var getModelSelections = function (models, curModel, textLookup) {
 	return options;
 };
 
-var getWeekSelections = function (totalWeeks, curWeek) {
+var getWeekSelections = function (totalWeeks, curWeek, defWeek) {
 	if (!curWeek) {
-		curWeek = 20;
+		curWeek = (defWeek) ? defWeek : 20;
 	}
 
 	var options = [];
@@ -55,7 +55,8 @@ router.get('/', function(req, res, next) {
   var textLookups = getTextLookups(req);
   var modelSelections = getModelSelections(forecastingService.models, null,
   	textLookups);
-  var weekSelections = getWeekSelections(20);
+  var weeksBack = getWeekSelections(20, 20);
+  var weeksForward = getWeekSelections(20, 1);
 
   forecastingService.getProducts(function (err, products) {
   	if (err) {
@@ -67,7 +68,8 @@ router.get('/', function(req, res, next) {
       title: 'Current Inventory',
       products: products,
       models: modelSelections,
-      weeks: weekSelections,
+      weeksBack: weeksBack,
+      weeksForward: weeksForward,
       text: getTextLookups(req)
     });
   });
@@ -77,16 +79,20 @@ router.get('/nextWeek', function (req, res, next) {
 	var forecastingService = getForecastingService(req);
 	var textLookups = getTextLookups(req);
 	var modelName = req.query['model'];
-	var numWeeks = req.query['weeks'];
+	var selectedWeeksBack = req.query['weeksBack'];
+  var selectedWeeksForward = req.query['weeksForward'];
 	var model = forecastingService.getModel(modelName);
 	var modelSelections = getModelSelections(forecastingService.models, modelName,
 		textLookups);
 	var totalWeeks = 20;
-	var weekSelections = getWeekSelections(totalWeeks, numWeeks);
+	var weeksBack = getWeekSelections(totalWeeks, selectedWeeksBack, 20);
+  var weeksForward = getWeekSelections(totalWeeks, selectedWeeksForward, 1);
 	var forecastingOptions = {
-		weeksBack: (numWeeks && numWeeks > 0 && numWeeks < totalWeeks)
-			? numWeeks : totalWeeks
-	}
+		weeksBack: (selectedWeeksBack && selectedWeeksBack > 0 && selectedWeeksBack < totalWeeks)
+			? selectedWeeksBack : totalWeeks,
+    weeksForward: (selectedWeeksForward && selectedWeeksForward > 0 && selectedWeeksForward <= totalWeeks)
+      ? selectedWeeksForward : 1
+	};
 
 	if (!model) {
 		next(new Error('Invalid model name: "' + modelName + '"'));
@@ -110,10 +116,11 @@ router.get('/nextWeek', function (req, res, next) {
         }
 
     		res.render('inventory/index', {
-    			title: 'Forecasted Sales for Next Week',
+    			title: 'Forecasted Sales',
     			products: products,
     			models: modelSelections,
-    			weeks: weekSelections,
+    			weeksBack: weeksBack,
+          weeksForward: weeksForward,
     			text: textLookups
     		});
       }

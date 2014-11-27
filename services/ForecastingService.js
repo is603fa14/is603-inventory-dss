@@ -62,7 +62,9 @@ var ForecastingService = function (databaseService) {
       options = {};
     }
 
-    _.defaults(options, {});
+    _.defaults(options, {
+      weeksForward: 1
+    });
 
     // get the products 
     this.getProducts(function (err, products) {
@@ -71,19 +73,21 @@ var ForecastingService = function (databaseService) {
         return;
       }
       
-      for (var i = 0; i < products.length; i++) {
-        var product = products[i];
-        var demand = model.forecastDemand(product, options);
+      for (var j = 0; j < options.weeksForward; j++) {
+        for (var i = 0; i < products.length; i++) {
+          var product = products[i];
+          var demand = model.forecastDemand(product, options);
 
-        // store the forecasted sale amount in the product
-        product.addForecastedSale(demand);
+          // store the forecasted sale amount in the product
+          product.addForecastedSale(demand);
 
-        if (!product.hasOwnProperty('debug')) {
-          product.debug = '';
+          if (!product.hasOwnProperty('debug')) {
+            product.debug = '';
+          }
+
+          product.debug += '\n' + demand.debug;
+          product.debug = product.debug.trim();
         }
-
-        product.debug += '\n' + demand.debug;
-        product.debug = product.debug.trim();
       }
 
       callback(null, products);
