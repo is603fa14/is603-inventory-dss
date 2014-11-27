@@ -14,6 +14,10 @@ var getForecastingService = function (request) {
 	return getContext(request).forecastingService;
 };
 
+var getRecommenderService = function (request) {
+  return getContext(request).recommenderService;
+};
+
 var getModelSelections = function (models, curModel, textLookup) {
 	var options = [];
 
@@ -28,11 +32,31 @@ var getModelSelections = function (models, curModel, textLookup) {
 	return options;
 };
 
+var getWeekSelections = function (totalWeeks, curWeek, defWeek) {
+	if (!curWeek) {
+		curWeek = (defWeek) ? defWeek : 20;
+	}
+
+	var options = [];
+
+	for (var i = 1; i <= totalWeeks; i++) {
+		options.push({
+			value: i,
+			name: i,
+			selected: (i == curWeek)
+		});
+	}
+
+	return options;
+};
+
 router.get('/', function(req, res, next) {
   var forecastingService = getForecastingService(req);
   var textLookups = getTextLookups(req);
   var modelSelections = getModelSelections(forecastingService.models, null,
   	textLookups);
+  var weeksBack = getWeekSelections(20, 20);
+  var weeksForward = getWeekSelections(20, 1);
 
   forecastingService.getProducts(function (err, products) {
   	if (err) {
@@ -44,59 +68,63 @@ router.get('/', function(req, res, next) {
       title: 'Current Inventory',
       products: products,
       models: modelSelections,
+      weeksBack: weeksBack,
+      weeksForward: weeksForward,
       text: getTextLookups(req)
     });
   });
-});
-
-router.get('/:index/nextWeek', function (req, res, next) {
-	var forecastingService = getForecastingService(req);
-	var prodIndex = req.params['index'];
-	var modelName = req.query['model'];
-	var model = forecastingService.getModel(modelName);
-
-	if (!model) {
-		next(new Error('Invalid model name: "' + modelName + '"'));
-		return;
-	}
-
-	forecastingService.getProducts(function (err, products) {
-		if (err) {
-			next(err);
-			return;
-		}
-
-		var product = products[prodIndex];
-		var forecast = model.forecastDemand(product);
-		res.send({forecast: forecast});
-	});
 });
 
 router.get('/nextWeek', function (req, res, next) {
 	var forecastingService = getForecastingService(req);
 	var textLookups = getTextLookups(req);
 	var modelName = req.query['model'];
+	var selectedWeeksBack = req.query['weeksBack'];
+  var selectedWeeksForward = req.query['weeksForward'];
 	var model = forecastingService.getModel(modelName);
 	var modelSelections = getModelSelections(forecastingService.models, modelName,
 		textLookups);
+	var totalWeeks = 20;
+	var weeksBack = getWeekSelections(totalWeeks, selectedWeeksBack, 20);
+  var weeksForward = getWeekSelections(totalWeeks, selectedWeeksForward, 1);
+	var forecastingOptions = {
+		weeksBack: (selectedWeeksBack && selectedWeeksBack > 0 && selectedWeeksBack < totalWeeks)
+			? selectedWeeksBack : totalWeeks,
+    weeksForward: (selectedWeeksForward && selectedWeeksForward > 0 && selectedWeeksForward <= totalWeeks)
+      ? selectedWeeksForward : 1
+	};
 
 	if (!model) {
 		next(new Error('Invalid model name: "' + modelName + '"'));
 		return;
 	}
 
-	forecastingService.forecastOrders(model, null, function (err, products) {
+	forecastingService.forecastOrders(model, forecastingOptions, function (err, products) {
 		if (err) {
 			next(err);
 			return;
 		}
 
-		res.render('inventory/index', {
-			title: 'Forecasted Sales for Next Week',
-			products: products,
-			models: modelSelections,
-			text: textLookups
-		});
+    var recommenderService = getRecommenderService(req);
+
+    recommenderService.makeRecommendation(
+      recommenderService.getRecommender('simple'), products, forecastingOptions,
+      function (err, products) {
+        if (err) {
+          next(err);
+          return;
+        }
+
+    		res.render('inventory/index', {
+    			title: 'Forecasted Sales',
+    			products: products,
+    			models: modelSelections,
+    			weeksBack: weeksBack,
+          weeksForward: weeksForward,
+    			text: textLookups
+    		});
+      }
+    );
 	});
 });
 

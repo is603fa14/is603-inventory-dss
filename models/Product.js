@@ -12,7 +12,8 @@ var Product = function (values) {
     inventory: null,
     weeklySales: [],
     marketAverage: null,
-    numStores: null
+    numStores: null,
+    recommendation: null
   });
   _.extend(this, values);
 
