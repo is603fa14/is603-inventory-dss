@@ -29,11 +29,11 @@ StatUtils.variance = function (arr, options) {
 	avg = (_.isNumber(options.avg)) ? options.avg : StatUtils.mean(arr);
 
 	varianceSum = _.reduce(arr, function (memo, num) {
-      var diff = num - options.avg;
+      var diff = num - avg;
       return memo + Math.pow(diff, 2);
     }, 0);
 
-    return varianceSum / arr.length;
+  return varianceSum / arr.length;
 };
 
 StatUtils.stdDeviation = function (arr, options) {
@@ -170,31 +170,27 @@ StatUtils.getUpperTLimit = function (arr, options) {
     return;
   }
 
+  if (!options) {
+    options = {};
+  }
+
   _.defaults(options, {
-    avg: null,
-    stdDeviation: null,
     confidenceInterval: '.95'
   });
 
-  if (!options.avg) {
-    options.avg = StatUtils.mean(arr, options);
-  }
-
-  if (!options.stdDeviation) {
-    options.stdDeviation = StatUtils.stdDeviation(arr, options);
-  }
-
+  var mean = StatUtils.mean(arr);
+  var stdDeviation = StatUtils.stdDeviation(arr);
   var dof = StatUtils.degreesOfFreedom(arr);
   var t = StatUtils.tValue(options.confidenceInterval, dof);
 
   if (_.isNumber(t)) {
-    var upperLimit = options.avg + ((t * options.stdDeviation) / Math.sqrt(arr.length));
+    var upperLimit = mean + ((t * stdDeviation) / Math.sqrt(arr.length));
     return {
       value: upperLimit,
       degreesOfFreedom: dof,
       t: t,
-      mean: options.avg,
-      stdDeviation: options.stdDeviation,
+      mean: mean,
+      stdDeviation: stdDeviation,
       confidenceInterval: options.confidenceInterval
     };
   }
