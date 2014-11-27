@@ -44,6 +44,7 @@ var BaseForecastingModel = function () {
     var forecasted = this.getForecastedQuantity(sales, forProduct, options);
 
     return new WeeklySale({
+      id: parseInt(forProduct.weeklySales[0].id) + 1,
       quantity: forecasted.value,
       forecasted: true,
       promo: this.isPromo(forProduct),

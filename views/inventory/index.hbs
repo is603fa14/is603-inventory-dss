@@ -20,22 +20,36 @@
                 {{/each}}
               </select>
               <small id="select-model-help" class="help-block">
-                Select a model to forecast future demand
+                Select a model to forecast future demand.
               </small>
             </div>
             <div class="form-group">
-              <label for="select-weeks">Number of Weeks Back</label>
-              <select class="form-control" name="weeks" id="select-weeks" 
-                describedby="select-weeks-help">
-                {{#each weeks}}
+              <label for="select-weeksBack">Number of Weeks Back</label>
+              <select class="form-control" name="weeksBack" id="select-weeksBack" 
+                describedby="select-weeksBack-help">
+                {{#each weeksBack}}
                 <option value="{{value}}" {{#if selected}}selected{{/if}}>
                   {{name}}
                 </option>
                 {{/each}}
               </select>
-              <small id="select-weeks-help" class="help-block">
-                Specify how many weeks back to go in order to forecast next 
-                week's demand.
+              <small id="select-weeksBack-help" class="help-block">
+                Specify how many weeks back to go in order to forecast future
+                demand.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="select-weeksForward">Number of Weeks Forward</label>
+              <select class="form-control" name="weeksForward" 
+                id="select-weeksForward" describedby="select-weeksForward-help">
+                {{#each weeksForward}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-weeksForward-help" class="help-block">
+                Specify how many weeks to forecast.
               </small>
             </div>
             <button class="btn btn-primary" type="submit">Show</button> 
@@ -74,33 +88,61 @@
 
           toggle($('#select-model').val());
 
-          // render a slider for the numweeks selection
-          var numWeeksSelect = $('#select-weeks');
-          var minWeeks = 1;
-          var maxWeeks = numWeeksSelect.find('option').length;
-          var curValue = numWeeksSelect[0].selectedIndex + 1;
-          var numWeeksMessage = $("<p><span id='num-weeks-message'>" +
-            curValue + "</span>&nbsp;weeks</p>");
-          var numWeeksSlider = $("<div id='slider-weeks'></div>")
-            .insertAfter(numWeeksSelect)
+          // render a slider for the numweeks back selection
+          var numWeeksBackSelect = $('#select-weeksBack');
+          var minWeeksBack = 1;
+          var maxWeeksBack = numWeeksBackSelect.find('option').length;
+          var curBackVal = numWeeksBackSelect[0].selectedIndex + 1;
+          var numWeeksBackMessage = $("<p><span id='num-weeksBack-message'>" +
+            curBackVal + "</span>&nbsp;weeks</p>");
+          var numWeeksBackSlider = $("<div id='slider-weeksBack'></div>")
+            .insertAfter(numWeeksBackSelect)
             .slider({
-              min: minWeeks,
-              max: maxWeeks,
+              min: minWeeksBack,
+              max: maxWeeksBack,
               range: 'min',
-              value: curValue,
+              value: curBackVal,
               slide: function (event, ui) {
-                numWeeksSelect[0].selectedIndex = ui.value - 1;
-                numWeeksMessage.find('#num-weeks-message').html(ui.value);
+                numWeeksBackSelect[0].selectedIndex = ui.value - 1;
+                numWeeksBackMessage.find('#num-weeksBack-message').html(ui.value);
               }
             });
 
-          numWeeksMessage.insertBefore(numWeeksSlider);
+          numWeeksBackMessage.insertBefore(numWeeksBackSlider);
 
-          numWeeksSelect.change(function () {
-            numWeeksSlider.slider('value', this.selectedIndex + 1);
+          numWeeksBackSelect.change(function () {
+            numWeeksBackSlider.slider('value', this.selectedIndex + 1);
           });
 
-          numWeeksSelect.hide();
+          numWeeksBackSelect.hide();
+
+          // render a slider for the numweeks forward selection
+          var numWeeksForwardSelect = $('#select-weeksForward');
+          var minWeeksForward = 1;
+          var maxWeeksForward = numWeeksForwardSelect.find('option').length;
+          var curForwardVal = numWeeksForwardSelect[0].selectedIndex + 1;
+          var numWeeksMessage = $("<p><span id='num-weeksForward-message'>" +
+            curForwardVal + "</span>&nbsp;weeks</p>");
+          var numWeeksForwardSlider = $("<div id='slider-weeksForward'></div>")
+            .insertAfter(numWeeksForwardSelect)
+            .slider({
+              min: minWeeksForward,
+              max: maxWeeksForward,
+              range: 'min',
+              value: curForwardVal,
+              slide: function (event, ui) {
+                numWeeksForwardSelect[0].selectedIndex = ui.value - 1;
+                numWeeksMessage.find('#num-weeksForward-message').html(ui.value);
+              }
+            });
+
+          numWeeksMessage.insertBefore(numWeeksForwardSlider);
+
+          numWeeksForwardSelect.change(function () {
+            numWeeksForwardSlider.slider('value', this.selectedIndex + 1);
+          });
+
+          numWeeksForwardSelect.hide();
         });
         </script>
       </div>
@@ -198,8 +240,8 @@
                 <tr{{#if forecasted}} class="info"{{/if}}>
                     <td>{{id}}</td>
                     <td>{{quantity}}</td>
-                    <td>{{marketAverage}}</td>
-                    <td>{{numStores}}</td>
+                    <td>{{#if marketAverage}}{{marketAverage}}{{else}}&dash;{{/if}}</td>
+                    <td>{{#if numStores}}{{numStores}}{{else}}&dash;{{/if}}</td>
                     <td>{{#if promo}}Yes{{else}}No{{/if}}</td>
                 </tr>
                 {{/each}}

@@ -2,11 +2,11 @@
   "models": {
     "simple": {
       "name": "Conservative Average",
-      "description": "Uses the average and standard deviation from the last 20 weeks to determine what the demand will be next week.  One standard deviation is added to the average to handle any increase in demand."
+      "description": "Uses the average and standard deviation from past weeks to determine what the demand will be next week.  One standard deviation is added to the average to handle any increase in demand."
     },
     "linearRegression": {
       "name": "Linear Regression",
-      "description": "Uses the least squares method to build a simple linear regression model, which is used to predict future demand using the calculated trend from the last 20 weeks."
+      "description": "Uses the least squares method to build a simple linear regression model, which is used to predict future demand using the calculated trend from previous weeks."
     },
     "tDistribution": {
       "name": "T-distribution",
