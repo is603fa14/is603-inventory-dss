@@ -15,6 +15,10 @@
     "avgWithPromo": {
       "name": "Average with Promotional Consideration",
       "description": "Use the average to determine the future demand, but inflate the average if there was a promotion involved.  If there was a promotion last week, then continue the promotion into this week."
+    },
+    "maxWithPromo": {
+      "name": "Maximum with Promotional Consideration",
+      "description": "Use the maximum from the specified weeks, and inflate if there was a promotion involved.  If there was a promotion last week, then continue the promotion into this week."
     }
   }
 }
