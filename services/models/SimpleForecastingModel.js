@@ -8,16 +8,16 @@ var SimpleForecastingModel = function () {
   // super constructor call 
   BaseForecastingModel.call(this);
 
-  this.getForecastedQuantity = function (forProduct) {
-    var salesArr = this.getWeeklySalesArr(forProduct);
-    var average = StatUtils.mean(salesArr);
-    var stdDeviation = StatUtils.stdDeviation(salesArr, {avg: average});
+  this.getForecastedQuantity = function (weeks, product, options) {
+    var average = StatUtils.mean(weeks);
+    var stdDeviation = StatUtils.stdDeviation(weeks, {avg: average});
     var trend = 1;
     var value = average + (trend * stdDeviation);
 
     var result = {
       value: Math.ceil(value),
       debug: {
+        numWeeks: weeks.length,
         average: average,
         stdDeviation: stdDeviation,
         trend: trend,
