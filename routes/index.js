@@ -8,20 +8,23 @@ var XmlService = require('../services/XmlService');
 // import forecasting model
 var SimpleForecastingModel = require('../services/models/SimpleForecastingModel');
 
-/* GET home page. */
+
 router.get('/', function(req, res) {
   var name = req.query['name'];
   if (!name) {
     name = 'World';
+    console.log("sa");
 }
-  res.render('indexp', { 
+  res.render('index', { 
    title: 'Welcome!',
     name: name
-    
   });
+  
+    console.log("sa");
+    
 });
 
-router.get('/sample', function (req, res, next) {
+router.get('/sample', function (req, res) {
   // specify the XML file to use
   var xmlPath = path.join(__dirname, '../data/inventoryData.xml');
   console.log(xmlPath);
@@ -32,12 +35,7 @@ router.get('/sample', function (req, res, next) {
   //var model = new SimpleForecastingModel();
 
   //res.send(forecastingService.forecastOrders(model));
-  dataService.getProducts(function(err, result) {
-    if (err) {
-      next(err);
-      return;
-    }
-
+  dataService.getProducts(function(result) {
     res.send(result);
   });           
 });

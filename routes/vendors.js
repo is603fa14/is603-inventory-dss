@@ -10,6 +10,7 @@ router.get('/', function (req, res, next) {
   var dataService = getDataService(req);
 
   dataService.getProducts(function (err, products) {
+    console.log(products);
     if (err) {
       next(err);
       return;

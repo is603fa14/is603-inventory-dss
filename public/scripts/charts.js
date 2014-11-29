@@ -1,8 +1,3 @@
-/**
- * Created by devel on 2/25/14.
- */
-
-
 
 var colorArray = [ "#009944", "#E60012", "#F08300","#EFEFEF"];
 //Palette URL: http://colorschemedesigner.com/#3q62mWSE5w0w0
@@ -77,85 +72,89 @@ function draw_pie_chart() {
 
 function draw_replacement() {
 
-var chart = AmCharts.makeChart("cost-bd", {
+
+    var chart = AmCharts.makeChart("cost-bd", {
     "type": "serial",
-    "pathToImages": "http://cdn.amcharts.com/lib/3/images/",
-    "categoryField": "candyf",
-    "colors": colorArray,
-    "rotate": true,
-      "legend": {
-        "markerType": "circle",
-        "position": "bottom",
-        "marginRight": 0,       
-        "autoMargins": false
+    "theme": "none",
+    "legend": {
+        "useGraphSettings": true
     },
-    "startDuration": 1,
+    "dataProvider": [ {
+        "month": 'jan',
+        "candy1": 3,
+        "candy2": 4,
+        "candy3": 1
+    }, {
+        "month": 'feb',
+        "candy1": 5,
+        "candy2": 1,
+        "candy3": 2
+    }, {
+        "month": 'march',
+        "candy1": 3,
+        "candy2": 2,
+        "candy3": 1
+    }, {
+        "month": 'jul',
+        "candy1": 1,
+        "candy2": 2,
+        "candy3": 3
+    }],
+    "valueAxes": [{
+        "integersOnly": true,
+        "maximum": 6,
+        "minimum": 1,
+        "reversed": true,
+        "axisAlpha": 0,
+        "dashLength": 5,
+        "gridCount": 10,
+        "position": "left",
+        "title": "Profit"
+    }],
+    "startDuration": 0.5,
+    "graphs": [{
+        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
+        "bullet": "round",
+        
+        "title": "candy1",
+        "valueField": "candy1",
+        "fillAlphas": 0
+    }, {
+        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
+        "bullet": "round",
+        "title": "candy2",
+        "valueField": "candy2",
+        "fillAlphas": 0
+    }, {
+        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
+        "bullet": "round",
+        "title": "candy3",
+        "valueField": "candy3",
+        "fillAlphas": 0
+    }],
+    "chartCursor": {
+        "cursorAlpha": 0,
+        "cursorPosition": "mouse",
+        "zoomable": false
+    },
+    "categoryField": "month",
     "categoryAxis": {
         "gridPosition": "start",
-        "position": "left"
+        "axisAlpha": 0,
+        "fillAlpha": 0.05,
+        "fillColor": "#000000",
+        "gridAlpha": 0,
+        "position": "top"
     },
-    "trendLines": [],
-    "graphs": [
-        {
-            "balloonText": "candy:[[value]]",
-            "fillAlphas": 0.8,
-            "id": "AmGraph-1",
-            "lineAlpha": 0.2,
-            "title": "candy",
-            "type": "column",
-            "valueField": "candy"
-        },
-        {
-            "balloonText": "replacement:[[value]]",
-            "fillAlphas": 0.8,
-            "id": "AmGraph-2",
-            "lineAlpha": 0.2,
-            "title": "replacement",
-            "type": "column",
-            "valueField": "replacement"
-        }
-    ],
-    "guides": [],
-    "valueAxes": [
-        {
-            "id": "ValueAxis-1",
-            "position": "top",
-            "axisAlpha": 0
-        }
-    ],
-    "allLabels": [],
-    "amExport": {
-        "right": 20,
-        "top": 20
-    },
-    "balloon": {},
-    "titles": [],
-    "dataProvider": [
-        {
-            "candyf": 'candy1',
-            "candy": 23.5,
-            "replacement": 18.1
-        },
-        {
-            "candyf":'candy2',
-            "candy": 26.2,
-            "replacement": 22.8
-        },
-        {
-            "candyf": 'candy3',
-            "candy": 30.1,
-            "replacement": 23.9
-        },
-        {
-            "candyf":'candy4',
-            "candy": 29.5,
-            "replacement": 25.1
-        },
-        {
-            "candyf": 'candy5',
-            "candy": 24.6,
-            "replacement": 25
-        }
-    ]
+    "exportConfig": {
+        "menuBottom": "15px",
+        "menuRight": "15px",
+        "menuItems": [{
+            "icon": '/lib/3/images/export.png',
+            "format": 'png'
+        }]
+    }
 });
+
+
 }
