@@ -6,85 +6,43 @@
 
 
                               </h3>
-
-
-
-
-
-
+<div class="pre-scrollable">
                         <table class="table table-condensed table-hover">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Quantity Sold <small>(this week)</small></th>
+                              <th>Current Inventory</th>
+                              <th>Forecasted Demand</th>
+                              <th>Recommendation</th>
+                            </tr>
+                          </thead>
                                     <tbody>
-                                      <tr class="active">
-                                        <td>
-                                            <a href="patient.html">
-                                           Dulce1 </a>
-                                        </td>
-                                        <td>
-                                          10
-                                        </td>
-                                        <td>
-                                          50
-                                        </td>
-                                        <td>
-                                          20
-                                        </td>
-                                          <td>
-                                          $1200
-                                        </td>
-                                      </tr>
-                                    <tr>
-                                        <td>
-                                            Dulce2
-                                        </td>
-                                        <td>
-                                          12
-                                        </td>
-                                        <td>
-                                          30
-                                        </td>
-                                        <td>
-                                          20
-                                        </td>
-                                          <td>
-                                          $850
-                                        </td>
-                                      </tr>
-                                    <tr>
-                                        <td>
-                                            dulce3
-                                        </td>
-                                        <td>
-                                          14
-                                        </td>
-                                        <td>
-                                          34
-                                        </td>
-                                        <td>
-                                          20
-                                        </td>
-                                          <td>
-                                          $200
-                                        </td>
-                                      </tr>
-                                    <tr>
-                                        <td>
-                                            Dulce4
-                                        </td>
-                                        <td>
-                                          16
-                                        </td>
-                                        <td>
-                                          30
-                                        </td>
-                                        <td>
-                                          17
-                                        </td>
-                                          <td>
-                                          $400
-                                        </td>
-                                      </tr>
+      {{#each summaryTable}}
+      <tr>
+        <td><abbr title="{{description}}">{{name}}</abbr></td>
+        <td>{{quantitySold}}</td>
+        <td>{{curInventory}}</td>
+        <td>{{forecastedDemand}}</td>
+        <td>
+          {{#with recommendation}}
+          {{#if replaceWith}}
+          <span class="label label-warning">Replace</span>
+          {{/if}}
+          {{#if orderQuantity}}
+          {{#if orderQuantity.quantity}}
+          <span class="label label-danger">Restock</span>
+          {{else}}
+          <span class="label label-info">No action</span>
+          {{/if}}
+          {{/if}}
+          {{/with}}
+        </td>
+      </tr>
+      {{/each}}
                                     </tbody>
                                   </table>
+                                </div>
                       </div>
                     </div>
                   </div>

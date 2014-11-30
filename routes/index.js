@@ -99,6 +99,7 @@ router.get('/', function(req, res, next) {
           return;
         }
 
+        var summaryTable = [];
         var productData = {};
         var productGraphs = [];
         var replacementData = [];
@@ -163,6 +164,16 @@ router.get('/', function(req, res, next) {
             "fillAlphas": 0,
             "hidden": productNum++ >= 5
           });
+
+          summaryTable.push({
+            name: product.name,
+            description: product.description,
+            quantitySold: product.weeklySales[1].quantity,
+            curInventory: product.inventory, 
+            forecastedDemand: parseInt(product.weeklySales[0].quantity.toString()),
+            recommendation: product.recommendation
+          });
+
           i = 0;
         }
 
@@ -201,7 +212,8 @@ router.get('/', function(req, res, next) {
           productGraphs: JSON.stringify(productGraphs).replace(/"/g, '\\"'),
           maxProduct: (max + (max % 10)),
           replacementData: JSON.stringify(replacementData).replace(/"/g, '\\"'),
-          replacementGraphs: JSON.stringify(replacementGraphs).replace(/"/g, '\\"')
+          replacementGraphs: JSON.stringify(replacementGraphs).replace(/"/g, '\\"'),
+          summaryTable: summaryTable
         });
       }
     );
