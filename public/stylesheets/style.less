@@ -2,7 +2,58 @@
 html, body {
    height: 100%;
    font-family:verdana,arial,sans-serif;
-   color:#009944;
+   color:#282828;
+}
+
+h1,h2,h3,h4,h5,h6,.panel-title {
+  color:#009944;
+}
+
+.well dl {
+  margin: 0;
+ 
+  dd p {
+    margin: 0;
+  }
+}
+
+footer {
+  padding: 20px;
+  font-size: .8em;
+  border-top: thin solid #484848;
+  background-color: #808080;
+  color: #F8F8F8;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  a {
+    color: #F8F8F8;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      color: #F8F8F8;
+    }
+  }
+}
+.navbar-default .navbar-nav li a {
+
+  color:#ffffff;
+  text-decoration: none;
+
+  &:hover, 
+  &:active {
+    color: #ffffff;
+    text-decoration:underline;
+    background-color: #17c76e;
+  }
+}
+
+.navbar-default .navbar-nav li.active a {
+  color: #ffffff;
+    text-decoration:none;
+    background-color: #17c76e;
 }
 
 .chart-col-6{
@@ -71,7 +122,7 @@ hr {
 }
 
 .wrapper, .row {
-   height: 100%;
+   //height: 100%;
    margin-left:0;
    margin-right:0;
 }
@@ -175,8 +226,15 @@ background-color:#ffffff;
     background-color:#009944;
 }
 
-.logo {
+.navbar a,
+.navbar-default .navbar-brand {
   color:#ffffff;
+
+  &:hover, 
+  &:active {
+  color: #ffffff;
+  text-decoration:underline;
+  }
 }
 #sidebar-footer {
   background-color:#444;
@@ -313,15 +371,16 @@ small.text-muted {
 .navbar-custom {
   background-color: #129955;
   border-color: #0f7b45;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#17c76e), to(#129955));
+  //background-image: -webkit-gradient(linear, left 0%, left 100%, from(#17c76e), to(#129955));
 }
-.navbar-inner {
-  background-image: -moz-linear-gradient(top, #009944, #009944);
-  background-image: -ms-linear-gradient(top, #ffffff, #009944);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009944), to(#009944));
-  background-image: -webkit-linear-gradient(top, #ffffff, #009944);
-  background-image: -o-linear-gradient(top, #ffffff, #009944);
-  background-image: linear-gradient(top, #ffffff, #009944);
+.navbar {
+  background-color: #009944;
+  //background-image: -moz-linear-gradient(top, #009944, #009944);
+  //background-image: -ms-linear-gradient(top, #ffffff, #009944);
+  //background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#009944), to(#009944));
+  //background-image: -webkit-linear-gradient(top, #ffffff, #009944);
+  //background-image: -o-linear-gradient(top, #ffffff, #009944);
+  //background-image: linear-gradient(top, #ffffff, #009944);
  
 }
 
