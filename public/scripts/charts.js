@@ -11,7 +11,7 @@ edu.umbc.is603.inventory.productsAxes = [{
     "dashLength": 5,
     "gridCount": 10,
     "position": "left",
-    "title": "Profit"
+    "title": "Quantity"
 }];
 
 var colorArray = [ "#009944", "#E60012", "#F08300","#EFEFEF"];
@@ -105,7 +105,8 @@ function draw_replacement() {
         "fillAlpha": 0.05,
         "fillColor": "#000000",
         "gridAlpha": 0,
-        "position": "top"
+        "position": "bottom",
+        "title": "Week"
     },
     "exportConfig": {
         "menuBottom": "15px",

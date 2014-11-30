@@ -139,7 +139,7 @@ router.get('/', function(req, res, next) {
             }
           }
           productGraphs.push({
-            "balloonText": "Profit in [[title]] [[category]]: [[value]]",
+            "balloonText": "Quantity sold of [[title]]: [[value]]",
             "bullet": "round",
             "title": product.name,
             "valueField": productKey,
