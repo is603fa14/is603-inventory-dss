@@ -9,6 +9,10 @@ var LinearRegForecastingModel = function () {
     var bestFit = StatUtils.bestFit(weeks);
     var value = bestFit.f(weeks.length + 1);
 
+    if (value < 0) {
+      value = 0;
+    }
+
     var result = {
       value: Math.ceil(value),
       debug: {   
