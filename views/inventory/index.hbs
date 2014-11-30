@@ -1,3 +1,6 @@
+<div class="panel">
+<div class="panel-body">
+<h1 class="panel-title">{{title}}</h1>
 <div class="row">
   <div class="col-sm-12">
     <p>
@@ -5,24 +8,148 @@
       week's projected demand.  This value is used to determine how much 
       of each product to order each week.
     </p>
-    <form action="/inventory/nextWeek" method="GET" class="form-inline">
-        <div class="form-group required">
-          <label for="select-model">Model</label>
-          <select class="form-control" name="model" id="select-model" required
-            describedby="select-model-help">
-            <option value=""></option>
-            {{#each models}}
-            <option name="{{value}}" {{#if selected}}selected{{/if}}>
-              {{name}}
-            </option>
+    <div class="row">
+      <div class="col-sm-6">
+        <form action="/inventory/nextWeek" method="GET" class="">
+            <div class="form-group required">
+              <label for="select-model">Model</label>
+              <select class="form-control" name="model" id="select-model" required
+                describedby="select-model-help">
+                <option value=""></option>
+                {{#each models}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-model-help" class="help-block">
+                Select a model to forecast future demand.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="select-weeksBack">Number of Weeks Back</label>
+              <select class="form-control" name="weeksBack" id="select-weeksBack" 
+                describedby="select-weeksBack-help">
+                {{#each weeksBack}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-weeksBack-help" class="help-block">
+                Specify how many weeks back to go in order to forecast future
+                demand.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="select-weeksForward">Number of Weeks Forward</label>
+              <select class="form-control" name="weeksForward" 
+                id="select-weeksForward" describedby="select-weeksForward-help">
+                {{#each weeksForward}}
+                <option value="{{value}}" {{#if selected}}selected{{/if}}>
+                  {{name}}
+                </option>
+                {{/each}}
+              </select>
+              <small id="select-weeksForward-help" class="help-block">
+                Specify how many weeks to forecast.
+              </small>
+            </div>
+            <button class="btn btn-success" type="submit">Show</button> 
+        </form>
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        <div class="well well-sm">
+          <dl class="model-descriptions">
+            {{#each text.models}}
+            <dt class="model-description-{{@key}} hide">{{name}}</dt>
+            <dd class="model-description-{{@key}} hide"><p>{{description}}</p></dd>
             {{/each}}
-          </select>
-          <small id="select-model-help" class="help-block sr-only">
-            Select a model to forecast next week's demand
-          </small>
+          </dl>
         </div>
-        <button class="btn btn-primary" type="submit">Show</button> 
-    </form>
+        <script type="text/javascript">
+        $(document).ready(function () {
+          // show the model descriptions as the selected options changes
+          var toggle = function (modelName) {
+            var selector = '.model-description-' + modelName;
+            var matched = $(selector);
+            var well = $($('.model-descriptions').parents('.well').get(0));
+            $('.model-descriptions').children().hide();
+            well.hide();
+            if (matched.length > 0) {
+              matched.show();  
+              well.show();
+            }
+          };
+
+          $('.model-descriptions').children('.hide').hide().removeClass('hide');
+
+          $('#select-model').change(function (event) {
+            var value = $(this).val();
+            toggle(value);
+          });
+
+          toggle($('#select-model').val());
+
+          // render a slider for the numweeks back selection
+          var numWeeksBackSelect = $('#select-weeksBack');
+          var minWeeksBack = 1;
+          var maxWeeksBack = numWeeksBackSelect.find('option').length;
+          var curBackVal = numWeeksBackSelect[0].selectedIndex + 1;
+          var numWeeksBackMessage = $("<p><span id='num-weeksBack-message'>" +
+            curBackVal + "</span>&nbsp;weeks</p>");
+          var numWeeksBackSlider = $("<div id='slider-weeksBack'></div>")
+            .insertAfter(numWeeksBackSelect)
+            .slider({
+              min: minWeeksBack,
+              max: maxWeeksBack,
+              range: 'min',
+              value: curBackVal,
+              slide: function (event, ui) {
+                numWeeksBackSelect[0].selectedIndex = ui.value - 1;
+                numWeeksBackMessage.find('#num-weeksBack-message').html(ui.value);
+              }
+            });
+
+          numWeeksBackMessage.insertBefore(numWeeksBackSlider);
+
+          numWeeksBackSelect.change(function () {
+            numWeeksBackSlider.slider('value', this.selectedIndex + 1);
+          });
+
+          numWeeksBackSelect.hide();
+
+          // render a slider for the numweeks forward selection
+          var numWeeksForwardSelect = $('#select-weeksForward');
+          var minWeeksForward = 1;
+          var maxWeeksForward = numWeeksForwardSelect.find('option').length;
+          var curForwardVal = numWeeksForwardSelect[0].selectedIndex + 1;
+          var numWeeksMessage = $("<p><span id='num-weeksForward-message'>" +
+            curForwardVal + "</span>&nbsp;weeks</p>");
+          var numWeeksForwardSlider = $("<div id='slider-weeksForward'></div>")
+            .insertAfter(numWeeksForwardSelect)
+            .slider({
+              min: minWeeksForward,
+              max: maxWeeksForward,
+              range: 'min',
+              value: curForwardVal,
+              slide: function (event, ui) {
+                numWeeksForwardSelect[0].selectedIndex = ui.value - 1;
+                numWeeksMessage.find('#num-weeksForward-message').html(ui.value);
+              }
+            });
+
+          numWeeksMessage.insertBefore(numWeeksForwardSlider);
+
+          numWeeksForwardSelect.change(function () {
+            numWeeksForwardSlider.slider('value', this.selectedIndex + 1);
+          });
+
+          numWeeksForwardSelect.hide();
+        });
+        </script>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row">
@@ -35,14 +162,14 @@
         <div class="col-sm-4">
           <h3>Details</h3>
           <dl>
-            <dt>Name</dt>
-            <dd>{{name}}</dd>
+            <dt>Description</dt>
+            <dd>{{description}}</dd>
             <dt>Type</dt>
             <dd>{{type}}</dd>
             <dt>Retail Price</dt>
             <dd>{{retailPrice}}</dd>
-            <dt>Profit Margin</dt>
-            <dd>{{margin}}</dd>
+            <dt>Current Inventory</dt>
+            <dd>{{inventory}}</dd>
           </dl>
           {{#if debug}}
           <div class="debug">
@@ -52,6 +179,53 @@
           {{/if}}
         </div>
         <div class="col-sm-8">
+          {{#if recommendation}}
+          <div class="recommendation">
+            {{#with recommendation}}
+            <h3>
+              Recommendation
+              {{#if replaceWith}}
+              <span class="label label-warning">Replace</span>
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#if orderQuantity.quantity}}
+              <span class="label label-success">Restock</span>
+              {{else}}
+              <span class="label label-info">No action</span>
+              {{/if}}
+              {{/if}}
+            </h3>
+            <div class="summary">
+              {{#if replaceWith}}
+              {{#with replaceWith}}
+              <p><strong>Replace with {{product.name}}.</strong></p>
+              {{/with}}
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#with orderQuantity}}
+              {{#if quantity}}
+              <p><strong>Order {{quantity}} more units.</strong></p>
+              {{else}}
+              <p><strong>Do nothing.</strong></p>
+              {{/if}}
+              {{/with}}
+              {{/if}}
+            </div>
+            <div class="justification">
+              {{#if replaceWith}}
+              {{#each replaceWith.justification}}
+              <p>{{.}}</p>
+              {{/each}}
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#each orderQuantity.justification}}
+              <p>{{.}}</p>
+              {{/each}}
+              {{/if}}
+            </div>
+            {{/with}}
+          </div>
+          {{/if}}
           <h3>Weekly Sales</h3>
           <div class="pre-scrollable">
             <table class="table table-striped sales">
@@ -69,8 +243,8 @@
                 <tr{{#if forecasted}} class="info"{{/if}}>
                     <td>{{id}}</td>
                     <td>{{quantity}}</td>
-                    <td>{{marketAverage}}</td>
-                    <td>{{numStores}}</td>
+                    <td>{{#if marketAverage}}{{marketAverage}}{{else}}&dash;{{/if}}</td>
+                    <td>{{#if numStores}}{{numStores}}{{else}}&dash;{{/if}}</td>
                     <td>{{#if promo}}Yes{{else}}No{{/if}}</td>
                 </tr>
                 {{/each}}
@@ -82,4 +256,6 @@
     </div>
     {{/each}}
   </div>
+</div>
+</div>
 </div>

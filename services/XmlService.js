@@ -15,36 +15,45 @@ var XmlService = function (fileName) {
     var products = [];
 
     parseString(fileContents,function(err,result) {
-        var xml_products=result.products.product;
+        if (err) {
+            callback(err);
+            return;
+        }
+
+        var xmlProducts = result.products.product;
         
-        for(var key in xml_products)
-        {
-            var xmlproduct = xml_products[key];
+        for(var key in xmlProducts) {
+            var xmlProduct = xmlProducts[key];
             var product = new Product({
-                type: xmlproduct['$']['type'],
-                name: xmlproduct['$']['name'],
-                retailPrice: xmlproduct['retailPrice'],
-                margin: xmlproduct['margin']
+                type: xmlProduct['$']['type'],
+                name: xmlProduct['$']['name'],
+                description: xmlProduct['description'],
+                retailPrice: xmlProduct['retailPrice'],
+                margin: xmlProduct['margin'],
+                inventory: xmlProduct['inventory'],
+                marketAverage: xmlProduct['mkavg'],
+                numStores: xmlProduct['nos']
             });
         
-            for (var weekKey in xmlproduct['week']) {
-                var xmlweek = xmlproduct['week'][weekKey];
-                var week = new WeeklySale({
-                    id: xmlweek['$']['id'],
-                    quantity: xmlweek['qty'],
-                    marketAverage: xmlweek['mkavg'],
-                    numStores: xmlweek['nos'],
-                    promo: xmlweek['$']['promo']
-                });
-        
-                product.addWeeklySale(week);
+            if (xmlProduct.hasOwnProperty('week') && xmlProduct['week'].length > 0) {
+                for (var weekKey in xmlProduct['week']) {
+                    var xmlWeek = xmlProduct['week'][weekKey];
+                    var week = new WeeklySale({
+                        id: xmlWeek['$']['id'],
+                        quantity: xmlWeek['qty'],
+                        marketAverage: xmlWeek['mkavg'],
+                        numStores: xmlWeek['nos'],
+                        promo: xmlWeek['$']['promo']
+                    });
+            
+                    product.addWeeklySale(week);
+                }
             }
+
             products.push(product);
-        
         }
         
-        callback(products);
-
+        callback(null, products);
 	});
   }
 };

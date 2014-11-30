@@ -134,8 +134,13 @@ the data from Excel, and transform using XSLT.
     1.  Open a terminal/command prompt, and navigate to the `data` directory.
     
     2.  Use Saxon to perform the transformation:
-    	```
+    	  ```
         java -jar saxon9he.jar -s:inventoryData_excel.xml -xsl:inventoryData_excel.xsl -o:inventoryData.xml
+        ```
+
+        The Saxon command for the replacement data:
+        ```
+        java -jar saxon9he.jar -s:replacementData_excel.xml -xsl:inventoryData_excel.xsl -o:replacementData.xml
         ```
 
 This will output the transformed data to `data/inventoryData.xml`.  
