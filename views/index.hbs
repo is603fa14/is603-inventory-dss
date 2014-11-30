@@ -110,7 +110,7 @@
                            <h3 class="panel-title">
                           Replacement <span id="date"></span>
                         </h3>
-                       <div id="cost-bd" class="chart-col-6"></div> -->
+                       <div id="cost-bd" class="chart-col-6"></div> 
                       </div>
                     </div>
                   </div>
@@ -121,6 +121,9 @@
 edu.umbc.is603.inventory.products = JSON.parse("{{{productData}}}");
 edu.umbc.is603.inventory.productsGraphs = JSON.parse("{{{productGraphs}}}");
 edu.umbc.is603.inventory.productsAxes[0].maximum = {{{maxProduct}}};
+
+edu.umbc.is603.inventory.replacements = JSON.parse("{{{replacementData}}}");
+edu.umbc.is603.inventory.replacementsGraphs = JSON.parse("{{{replacementGraphs}}}");
 
 $(function () {
   showdashboard();

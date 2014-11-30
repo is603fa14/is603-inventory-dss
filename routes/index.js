@@ -101,6 +101,8 @@ router.get('/', function(req, res, next) {
 
         var productData = {};
         var productGraphs = [];
+        var replacementData = [];
+        var replacementGraphs = [];
         var numWeeks = 4;
         var i = 0;
         var productNum = 0;
@@ -130,14 +132,29 @@ router.get('/', function(req, res, next) {
             } else {
               data = productData[week.id];
             }
+
             data[productKey] = week.quantity.toString();
             productData[week.id] = data;
+
             i += 1;
 
             if (parseInt(week.quantity.toString()) > max) {
               max = parseInt(week.quantity.toString());
             }
           }
+
+          if (product.recommendation && product.recommendation.replaceWith) {
+            var replacement = product.recommendation.replaceWith.product;
+
+            replacementData.push({
+              "name": "#" + (replacementData.length + 1),
+              "current": product.weeklySales[0].quantity,
+              "replacement": parseInt(replacement.marketAverage.toString()),
+              "replacementName": replacement.name,
+              "productName": product.name
+            });
+          }
+
           productGraphs.push({
             "balloonText": "Quantity sold of [[title]]: [[value]]",
             "bullet": "round",
@@ -149,6 +166,30 @@ router.get('/', function(req, res, next) {
           i = 0;
         }
 
+        replacementGraphs.push({
+          "balloonText": "Projected quantity of [[description]] next week: [[value]]",
+          "labelText": "[[description]]",
+          "title": "Current Product",
+          "type": "column",
+          "valueField": "current",
+          "fillAlphas": 0.8,
+          "lineAlpha": 0.2,
+          "id": "Am-Graph1",
+          "descriptionField": "productName"
+        });
+
+        replacementGraphs.push({
+          "balloonText": "Projected quantity of [[description]] next week: [[value]]",
+          "labelText": "[[description]]",
+          "title": "Replacement Product",
+          "type": "column",
+          "valueField": "replacement",
+          "fillAlphas": 0.8,
+          "lineAlpha": 0.2,
+          "id": "Am-Graph2",
+          "descriptionField": "replacementName"
+        });
+
         res.render('index', {
           title: 'Inventory Dashboard',
           products: products,
@@ -158,7 +199,9 @@ router.get('/', function(req, res, next) {
           text: textLookups,
           productData: JSON.stringify(_.values(productData)).replace(/"/g, '\\"'),
           productGraphs: JSON.stringify(productGraphs).replace(/"/g, '\\"'),
-          maxProduct: (max + (max % 10))
+          maxProduct: (max + (max % 10)),
+          replacementData: JSON.stringify(replacementData).replace(/"/g, '\\"'),
+          replacementGraphs: JSON.stringify(replacementGraphs).replace(/"/g, '\\"')
         });
       }
     );
