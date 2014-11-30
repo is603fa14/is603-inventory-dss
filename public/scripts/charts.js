@@ -1,4 +1,19 @@
 
+var edu = { umbc: { is603: { inventory: { } } } };
+
+edu.umbc.is603.inventory.products = [];
+edu.umbc.is603.inventory.productsGraphs = [];
+edu.umbc.is603.inventory.productsAxes = [{
+    "integersOnly": true,
+    "maximum": 100,
+    "minimum": 1,
+    "axisAlpha": 0,
+    "dashLength": 5,
+    "gridCount": 10,
+    "position": "left",
+    "title": "Profit"
+}];
+
 var colorArray = [ "#009944", "#E60012", "#F08300","#EFEFEF"];
 //Palette URL: http://colorschemedesigner.com/#3q62mWSE5w0w0
 
@@ -22,12 +37,8 @@ var array = [
 // dashboard charts
 
 function showdashboard() {
-    console.log("Dashboard Chart");
-    
      draw_pie_chart();
      draw_replacement(); 
-   
-
 }
 
 
@@ -52,7 +63,7 @@ function draw_pie_chart() {
                         "profit": 165.8
                     }];
 
-                var chart = AmCharts.makeChart("total-spend", {
+                var chart = AmCharts.makeChart("cost-bd", {
                     "type": "pie",
                     "theme": "none",
                     "dataProvider":array,
@@ -72,72 +83,22 @@ function draw_pie_chart() {
 
 function draw_replacement() {
 
-
-    var chart = AmCharts.makeChart("cost-bd", {
+    var chart = AmCharts.makeChart("total-spend", {
     "type": "serial",
     "theme": "none",
     "legend": {
         "useGraphSettings": true
     },
-    "dataProvider": [ {
-        "month": 'jan',
-        "candy1": 3,
-        "candy2": 4,
-        "candy3": 1
-    }, {
-        "month": 'feb',
-        "candy1": 5,
-        "candy2": 1,
-        "candy3": 2
-    }, {
-        "month": 'march',
-        "candy1": 3,
-        "candy2": 2,
-        "candy3": 1
-    }, {
-        "month": 'jul',
-        "candy1": 1,
-        "candy2": 2,
-        "candy3": 3
-    }],
-    "valueAxes": [{
-        "integersOnly": true,
-        "maximum": 6,
-        "minimum": 1,
-        "reversed": true,
-        "axisAlpha": 0,
-        "dashLength": 5,
-        "gridCount": 10,
-        "position": "left",
-        "title": "Profit"
-    }],
+    "dataProvider": edu.umbc.is603.inventory.products,
+    "valueAxes": edu.umbc.is603.inventory.productsAxes,
     "startDuration": 0.5,
-    "graphs": [{
-        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
-        "bullet": "round",
-        
-        "title": "candy1",
-        "valueField": "candy1",
-        "fillAlphas": 0
-    }, {
-        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
-        "bullet": "round",
-        "title": "candy2",
-        "valueField": "candy2",
-        "fillAlphas": 0
-    }, {
-        "balloonText": "Profit in [[title]]  [[category]]: [[value]]",
-        "bullet": "round",
-        "title": "candy3",
-        "valueField": "candy3",
-        "fillAlphas": 0
-    }],
+    "graphs": edu.umbc.is603.inventory.productsGraphs,
     "chartCursor": {
         "cursorAlpha": 0,
         "cursorPosition": "mouse",
         "zoomable": false
     },
-    "categoryField": "month",
+    "categoryField": "week",
     "categoryAxis": {
         "gridPosition": "start",
         "axisAlpha": 0,

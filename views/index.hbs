@@ -115,4 +115,14 @@
                     </div>
                   </div>
                 </div>
-               
+
+<script type="text/javascript">
+
+edu.umbc.is603.inventory.products = JSON.parse("{{{productData}}}");
+edu.umbc.is603.inventory.productsGraphs = JSON.parse("{{{productGraphs}}}");
+edu.umbc.is603.inventory.productsAxes[0].maximum = {{{maxProduct}}};
+
+$(function () {
+  showdashboard();
+})
+</script>
