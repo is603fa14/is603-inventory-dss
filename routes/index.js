@@ -62,7 +62,7 @@ router.get('/', function(req, res, next) {
 
   var forecastingService = getForecastingService(req);
   var textLookups = getTextLookups(req);
-  var modelName = req.query['model'];
+  var modelName = req.query['model'] ? req.query['model'] : 'simple';
   var selectedWeeksBack = req.query['weeksBack'];
   var selectedWeeksForward = req.query['weeksForward'];
   var model = forecastingService.getModel(modelName);
