@@ -1,21 +1,86 @@
+<div class="row">
+<div class="col-sm-12">
 <div class="panel">
 <div class="panel-body">
 <h1 class="panel-title">{{title}}</h1>
 <div class="row">
+  <div class="col-xs-12">
+    <div class="pre-scrollable">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Retail Price</th>
+            <th>Inventory</th>
+            {{#if products.0.recommendation}}
+            <th>Recommendation</th>
+            {{/if}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#each products}}
+          <tr>
+            <td>
+              <a href="#product-{{@index}}" title="Jump to product details">
+                {{name}}
+              </a>
+            </td>
+            <td>{{type}}</td>
+            <td>{{retailPrice}}</td>
+            <td>{{inventory}}</td>
+            {{#if recommendation}}
+            {{#with recommendation}}
+            <td>
+              {{#if replaceWith}}
+              <span class="label label-warning">Replace</span>
+              {{/if}}
+              {{#if orderQuantity}}
+              {{#if orderQuantity.quantity}}
+              <span class="label label-danger">Restock</span>
+              {{else}}
+              <span class="label label-info">No action</span>
+              {{/if}}
+              {{/if}}
+            </td>
+            {{/with}}
+            {{/if}}
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+    <div class="actions">
+      <p>
+        <a href="/inventory/source" class="btn btn-default">View Source</a>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-body">
+<h2 id="top" class="panel-title">Forecast</h2>
+<div class="row">
   <div class="col-sm-12">
     <p>
-      Use the form below to select a forecasting model to predict next 
-      week's projected demand.  This value is used to determine how much 
-      of each product to order each week.
+      Use the form below to select a forecasting model to predict demand.  
+      This value is used to determine how much of each product to order.
+    </p>
+    <p>
+      <small>
+        Note: experimental features may not work in all situations; they 
+        have been included for testing purposes.
+      </small>
     </p>
     <div class="row">
       <div class="col-sm-6">
         <form action="/inventory/nextWeek" method="GET" class="">
             <div class="form-group required">
               <label for="select-model">Model</label>
-              <select class="form-control" name="model" id="select-model" required
-                describedby="select-model-help">
-                <option value=""></option>
+              <select class="form-control" name="model" id="select-model" required>
+                <option value="">Select one</option>
                 {{#each models}}
                 <option value="{{value}}" {{#if selected}}selected{{/if}}>
                   {{name}}
@@ -28,8 +93,7 @@
             </div>
             <div class="form-group">
               <label for="select-weeksBack">Number of Weeks Back</label>
-              <select class="form-control" name="weeksBack" id="select-weeksBack" 
-                describedby="select-weeksBack-help">
+              <select class="form-control" name="weeksBack" id="select-weeksBack">
                 {{#each weeksBack}}
                 <option value="{{value}}" {{#if selected}}selected{{/if}}>
                   {{name}}
@@ -44,7 +108,7 @@
             <div class="form-group">
               <label for="select-weeksForward">Number of Weeks Forward</label>
               <select class="form-control" name="weeksForward" 
-                id="select-weeksForward" describedby="select-weeksForward-help">
+                id="select-weeksForward">
                 {{#each weeksForward}}
                 <option value="{{value}}" {{#if selected}}selected{{/if}}>
                   {{name}}
@@ -52,14 +116,14 @@
                 {{/each}}
               </select>
               <small id="select-weeksForward-help" class="help-block">
-                Specify how many weeks to forecast.
+                Specify how many weeks to forecast. (Experimental)
               </small>
             </div>
             <button class="btn btn-success" type="submit">Show</button> 
         </form>
       </div>
       <div class="col-sm-5 col-sm-offset-1">
-        <div class="well well-sm">
+        <div class="model-definition well well-sm">
           <dl class="model-descriptions">
             {{#each text.models}}
             <dt class="model-description-{{@key}} hide">{{name}}</dt>
@@ -152,12 +216,14 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+</div>
+</div>
+<!-- <div class="row">
+  <div class="col-sm-12"> -->
     {{#each products}}
-    <hr/>
-    <div class="product">
-      <h2>{{name}}</h2>
+    <div class="panel" id="product-{{@index}}">
+    <div class="product panel-body">
+      <h2 class="panel-title">{{name}}</h2>
       <div class="row">
         <div class="col-sm-4">
           <h3>Details</h3>
@@ -189,7 +255,7 @@
               {{/if}}
               {{#if orderQuantity}}
               {{#if orderQuantity.quantity}}
-              <span class="label label-success">Restock</span>
+              <span class="label label-danger">Restock</span>
               {{else}}
               <span class="label label-info">No action</span>
               {{/if}}
@@ -253,9 +319,15 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="back-to-top">
+            <p><small><a class="btn btn-sm btn-default" href="#">Back to top</a></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     {{/each}}
-  </div>
-</div>
 </div>
 </div>

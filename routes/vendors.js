@@ -22,4 +22,17 @@ router.get('/', function (req, res, next) {
   });
 });
 
+router.get('/source', function (req, res, next) {
+  var xmlService = getDataService(req);
+  var xml = xmlService ? xmlService.getXML() : null;
+
+  if (!xml) {
+    next(new Error('XML file not found'));
+    return;
+  }
+
+  res.set('Content-Type', 'application/xml');
+  res.send(xml);
+});
+
 module.exports = router;

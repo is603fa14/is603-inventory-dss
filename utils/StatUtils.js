@@ -193,6 +193,15 @@ StatUtils.getUpperTLimit = function (arr, options) {
       stdDeviation: stdDeviation,
       confidenceInterval: options.confidenceInterval
     };
+  } else {
+    return {
+      value: mean,
+      degreesOfFreedom: 0,
+      t: undefined,
+      mean: mean,
+      stdDeviation: stdDeviation,
+      confidenceInterval: options.confidenceInterval
+    };
   }
 };
 
