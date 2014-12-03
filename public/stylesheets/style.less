@@ -9,6 +9,12 @@ h1,h2,h3,h4,h5,h6,.panel-title {
   color:#009944;
 }
 
+.panel {
+  h3, h4, h5, h6 {
+    font-size: 16px;
+  }
+}
+
 .model-definition {
   margin-top: 20px;
 }
@@ -21,43 +27,61 @@ h1,h2,h3,h4,h5,h6,.panel-title {
   }
 }
 
+a {
+  &:hover, &:active {
+    text-decoration: none;
+    border-bottom: 1px solid #428BCA;
+  }
+}
+
+body, .wrapper {
+  background-color: #808080;
+}
+
 footer {
   padding: 20px;
   font-size: .8em;
   border-top: thin solid #484848;
   background-color: #808080;
   color: #F8F8F8;
-  margin-left: -20px;
-  margin-right: -20px;
 
   a {
     color: #F8F8F8;
     text-decoration: none;
+    border:none;
 
     &:hover,
     &:active {
       text-decoration: underline;
       color: #F8F8F8;
+      border: none;
     }
   }
 }
+
+.navbar-brand, 
 .navbar-default .navbar-nav li a {
 
   color:#ffffff;
   text-decoration: none;
+  border:none;
 
   &:hover, 
   &:active {
     color: #ffffff;
     text-decoration:underline;
     background-color: #17c76e;
+    border: none;
   }
 }
 
-.navbar-default .navbar-nav li.active a {
-  color: #ffffff;
+.navbar-default .navbar-nav li.active a,
+.navbar-default .navbar-nav li.active a:hover,
+.navbar-default .navbar-nav li.active a:active {
+    color: #ffffff;
     text-decoration:none;
     background-color: #17c76e;
+    border:none;
 }
 
 .chart-col-6{
@@ -111,14 +135,6 @@ footer {
 .nav {
    font-family:Arial,sans-serif;
    font-size:13px;
-}
-
-a {
-  color:#222222;
-}
-
-a:hover {
-  text-decoration:none;
 }
 
 hr {

@@ -1,13 +1,14 @@
+<h1 class="sr-only">{{title}}</h1>
 <div class="panel panel-default">
   <div class="panel-body">
-    <h3 class="panel-title">Filter</h3>
+    <h2 class="panel-title">Forecast Filter</h2>
     <div class="row">
       <div class="col-sm-6">
         <form action="/" method="GET" class="">
           <div class="form-group required">
             <label for="select-model">Model</label>
-            <select class="form-control" name="model" id="select-model" required
-              describedby="select-model-help">
+            <select class="form-control" name="model" id="select-model" required>
+              <option value="">Select one</option>
               {{#each models}}
               <option value="{{value}}" {{#if selected}}selected{{/if}}>
                 {{name}}
@@ -20,8 +21,7 @@
           </div>
           <div class="form-group">
             <label for="select-weeksBack">Number of Weeks Back</label>
-            <select class="form-control" name="weeksBack" id="select-weeksBack"
-              describedby="select-weeksBack-help">
+            <select class="form-control" name="weeksBack" id="select-weeksBack">
               {{#each weeksBack}}
               <option value="{{value}}" {{#if selected}}selected{{/if}}>
                 {{name}}
@@ -99,9 +99,9 @@
   <div class="panel-body">
     <div class="dropdown">
       
-      <h3 class="panel-title">
+      <h2 class="panel-title">
       Summary
-      </h3>
+      </h2>
       <div class="pre-scrollable">
         <table class="table table-condensed table-hover">
           <thead>
@@ -142,29 +142,26 @@
     </div>
   </div>
 </div>
-</div>
+
 <!-- /row -->
 <!-- Charts -->
 <div class="row">
-<!-- main col left -->
-<div class="col-sm-6">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <h3 class="panel-title">
-      Forecasted Sales
-      </h3>
-      <div id="total-spend" class="chart-col-6"></div>
+  <!-- main col left -->
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h2 class="panel-title">Forecasted Sales</h2>
+        <div id="total-spend" class="chart-col-6"></div>
+      </div>
     </div>
   </div>
-</div>
-<!-- main col right -->
-<div class="col-sm-6">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <h3 class="panel-title">
-      Recommended Replacements <span id="date"></span>
-      </h3>
-      <div id="cost-bd" class="chart-col-6"></div>
+  <!-- main col right -->
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h2 class="panel-title">Recommended Replacements</h2>
+        <div id="cost-bd" class="chart-col-6"></div>
+      </div>
     </div>
   </div>
 </div>
