@@ -10,8 +10,12 @@ var XmlService = function (fileName) {
   assert(_.isString(fileName), "File name must be a path to an XML file");
   this.fileName = fileName;
 
+  this.getXML = function () {
+    return fs.readFileSync(this.fileName);
+  };
+
   this.getProducts = function (callback) {
-    var fileContents = fs.readFileSync(this.fileName);
+    var fileContents = this.getXML();
     var products = [];
 
     parseString(fileContents,function(err,result) {

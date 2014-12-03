@@ -3,6 +3,10 @@ var WeeklySale = require('../models/WeeklySale');
 
 var DummyXmlService = function () {
 
+  this.getXML = function () {
+    return;
+  };
+
   this.getProducts = function (callback) {
     var products = [];
 

@@ -128,4 +128,17 @@ router.get('/nextWeek', function (req, res, next) {
 	});
 });
 
+router.get('/source', function (req, res, next) {
+  var xmlService = getContext(req).dataService;
+  var xml = xmlService ? xmlService.getXML() : null;
+
+  if (!xml) {
+    next(new Error('XML file not found'));
+    return;
+  }
+
+  res.set('Content-Type', 'application/xml');
+  res.send(xml);
+});
+
 module.exports = router;
