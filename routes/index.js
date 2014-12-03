@@ -98,7 +98,7 @@ router.get('/', function(req, res, next) {
         var productGraphs = [];
         var replacementData = [];
         var replacementGraphs = [];
-        var numWeeks = 4;
+        var numWeeks = selectedWeeksBack || 20;
         var i = 0;
         var productNum = 0;
         var max = -1;
