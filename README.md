@@ -10,6 +10,16 @@ This application is being developed as part of a project for
 at [UMBC](http://www.umbc.edu).
 
 
+Table of Contents
+-----------------
+
+  - [Environment](#environment)
+  - [First-time Set-up](#first-time-set-up)
+  - [Development](#development)
+  - [Generating Data](#generating-data)
+  - [Third-party Software](#third-party-software)
+
+
 Environment
 ------------
 
@@ -171,5 +181,6 @@ the following:
   - [jQuery](http://jquery.com/) and [jQuery UI](http://jqueryui.com/): JavaScript libraries. 
   - [AM Charts](http://www.amcharts.com/javascript-charts/): a JavaScript library for easily creating graphs.
   - [XML2JS](https://github.com/Leonidas-from-XIV/node-xml2js): a library for reading XML into JavaScript objects.
+  - [Saxon](http://saxon.sourceforge.net/): a Java-based XSLT processor, used for converting data from Excel to XML.
 
 Additional dependencies are included in the `package.json` file.
