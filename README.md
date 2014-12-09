@@ -32,6 +32,13 @@ The following ports are forwarded from the host machine to the guest machine:
   - `localhost:3000` is forwarded to the Node.js Express.js application 
      (when running)
 
+**Note**: an alternative to using Vagrant and a virtual machine is to 
+simply install Node.js on the host operating system, and run the 
+application directly on the machine.  To do so, 
+[download](http://nodejs.org/download/) and install Node.js, and 
+then following the [First-time Set-up](#first-time-set-up) procedure,
+skipping steps 3-5.
+
 
 First-time Set-up
 -----------------
@@ -42,18 +49,21 @@ with "Git for Windows".
 
   1.	Clone the project repository on the host machine: 
   	`https://github.com/thierer1/is603-inventory-dss.git`.
+  
+  2.    Navigate to the project directory:
+        `cd is603-inventory-dss`.
 
-  2.	Set-up the guest VM using Vagrant: 
+  3.	Set-up the guest VM using Vagrant: 
   	`vagrant up`.
 
 	This may take several minutes to set-up.  The first time, Vagrant will 
 	attempt to download the base box, and then provision necessary software 
 	onto the box.  
 
-  3.	SSH into the guest VM: 
+  4.	SSH into the guest VM: 
 	`vagrant ssh`.
 
-  4.	Navigate to the project directory:
+  5.	Navigate to the project directory:
 	`cd /vagrant`.
 
 	The `/vagrant` directory is linked to the project directory on the 
@@ -61,13 +71,13 @@ with "Git for Windows".
 	machine, and they will automatically be made in the guest machine 
 	as well. 
 
-  5.	Install Node.js dependencies:
+  6.	Install Node.js dependencies:
 	`npm install`.
 
-  6.	Start the application:
+  7.	Start the application:
 	`node bin/www`.
 
-  7.	Using a browser on the host machine, navigate to:
+  8.	Using a browser on the host machine, navigate to:
 	`http://localhost:3000`.
 
 	You should see the application homepage. 
@@ -147,3 +157,19 @@ This will output the transformed data to `data/inventoryData.xml`.
 
 (Note: this process requires a [Java](https://www.java.com/en/) executable to 
 be on the PATH.)
+
+
+Third-Party Software
+--------------------
+
+This project makes use of several open source tools, including
+the following:
+
+  - [Express JS](http://expressjs.com/): a Sinatra-style web framework for Node.js.
+  - [Handlebars](http://handlebarsjs.com/): a templating engine.
+  - [Bootstrap](http://getbootstrap.com/): a front-end CSS framework.
+  - [jQuery](http://jquery.com/) and [jQuery UI](http://jqueryui.com/): JavaScript libraries. 
+  - [AM Charts](http://www.amcharts.com/javascript-charts/): a JavaScript library for easily creating graphs.
+  - [XML2JS](https://github.com/Leonidas-from-XIV/node-xml2js): a library for reading XML into JavaScript objects.
+
+Additional dependencies are included in the `package.json` file.
